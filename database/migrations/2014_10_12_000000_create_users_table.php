@@ -22,7 +22,10 @@ return new class extends Migration
             $table->date('fecha_nacimiento');
             $table->boolean('aceptar_tyc');
             $table->boolean('aceptar_tratamiento_datos');
-            // $table->enum('rol', ['tutor', 'estudiante']);
+            $table->foreignId('rol_id');
+            $table->foreign('rol_id')->references('id')->on('roles');
+            $table->foreignId('estado_id');
+            $table->foreign('estado_id')->references('id')->on('estados');
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

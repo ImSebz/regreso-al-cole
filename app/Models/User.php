@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -19,8 +18,16 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'cedula',
+        'ciudad',
         'email',
+        'celular',
         'password',
+        'fecha_nacimiento',
+        'aceptar_tyc',
+        'aceptar_tratamiento_datos',
+        'rol_id',
+        'estado_id',
     ];
 
     /**
@@ -41,5 +48,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+        'fecha_nacimiento' => 'date',
+        'aceptar_tyc' => 'boolean',
+        'aceptar_tratamiento_datos' => 'boolean',
     ];
+
+    public function role()
+    {
+        return $this->belongsTo(Role::class, 'rol_id');
+    }
+
+
+    public function state()
+    {
+        return $this->belongsTo(Estado::class, 'estado_id');
+    }
 }
