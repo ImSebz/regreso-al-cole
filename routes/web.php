@@ -24,3 +24,6 @@ Route::get('/login', Login::class)->name('login');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware('auth')->name('dashboard');
+Route::get('/registro-compra', function () {
+    return view('registro-compra');
+})->middleware('auth')->name('registro-compra');
