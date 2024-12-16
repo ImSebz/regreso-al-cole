@@ -19,7 +19,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'cedula',
-        'ciudad',
+        'ciudad_id',
         'email',
         'celular',
         'password',
@@ -62,5 +62,10 @@ class User extends Authenticatable
     public function state()
     {
         return $this->belongsTo(Estado::class, 'estado_id');
+    }
+
+    public function ciudad() 
+    {
+        return $this->belongsTo(Ciudad::class, 'ciudad_id');
     }
 }
