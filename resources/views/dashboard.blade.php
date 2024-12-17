@@ -10,5 +10,7 @@
     <h1>Bienvenido al Dashboard</h1>
     <p>Has iniciado sesión correctamente.</p>
     <a href="{{ route('registro-compra') }}">Registro Compra</a>
+    <a href="{{ route('dibujos') }}">Dibujos</a>
+    <a href="{{ route('ganadores') }}">Ganadores</a>
 </body>
 </html>

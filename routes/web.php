@@ -20,10 +20,21 @@ Route::get('/', function () {
 });
 
 Route::get('/register', Register::class)->name('register');
+
 Route::get('/login', Login::class)->name('login');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware('auth')->name('dashboard');
+
 Route::get('/registro-compra', function () {
     return view('registro-compra');
 })->middleware('auth')->name('registro-compra');
+
+Route::get('/dibujos', function () {
+    return view('dibujos');
+})->middleware('auth')->name('dibujos');
+
+Route::get('/ganadores', function () {
+    return view('ganadores');
+})->middleware('auth')->name('ganadores');
