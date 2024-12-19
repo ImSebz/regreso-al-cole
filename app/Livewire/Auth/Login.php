@@ -19,7 +19,7 @@ class Login extends Component
         $this->validate();
 
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
-            return redirect()->route('dashboard');
+            return redirect()->route('registro-compra');
         } else {
             session()->flash('error', 'Invalid credentials');
         }

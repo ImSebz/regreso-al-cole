@@ -18,9 +18,11 @@ return new class extends Migration
             $table->string('foto_portada');
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreignId('user_id');
-            $table->foreign('estado_id')->references('id')->on('estados');
+            $table->foreign('estado_id')->references('id')->on('estados')->default(2);;
             $table->foreignId('estado_id');
             $table->string('observaciones')->nullable();
+            $table->foreign('estado_portada')->references('id')->on('estados')->default(2);
+            $table->foreignId('estado_portada');
             $table->timestamps();
         });
     }

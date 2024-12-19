@@ -7,6 +7,7 @@
     <title>Sección ganadores</title>
 </head>
 <body>
+    @include('components.layouts.header')
     <h1>Sección de ganadores</h1>
     
 </body>

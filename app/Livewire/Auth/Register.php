@@ -71,7 +71,7 @@ class Register extends Component
         event(new Registered($user));
         Auth::login($user);
 
-        return redirect()->route('dashboard')->with([
+        return redirect()->route('registro-compra')->with([
             'title' => '¡Bienvenido/a!',
             'register-success' => 'Registro exitoso. Ahora puedes disfrutar de nuestros servicios.'
         ]);

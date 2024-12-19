@@ -7,6 +7,8 @@
     <title>Dibujos</title>
 </head>
 <body>
+    @include('components.layouts.header')
+    
     <h1>Seccion de Dibujos</h1>
 </body>
 </html>

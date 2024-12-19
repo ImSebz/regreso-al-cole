@@ -7,6 +7,7 @@
     <title>Registro de Compra</title>
 </head>
 <body>
+    @include('components.layouts.header')
     <h1>Registro de Compra</h1>
     
     <form action="" method="POST" enctype="multipart/form-data">
