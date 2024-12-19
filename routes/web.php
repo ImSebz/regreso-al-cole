@@ -27,9 +27,9 @@ Route::get('/registro-compra', function () {
     return view('registro-compra');
 })->middleware('auth')->name('registro-compra');
 
-Route::get('/dibujos', function () {
-    return view('dibujos');
-})->middleware('auth')->name('dibujos');
+Route::get('/galeria', function () {
+    return view('galeria');
+})->middleware('auth')->name('galeria');
 
 Route::get('/ganadores', function () {
     return view('ganadores');
