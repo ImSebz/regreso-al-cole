@@ -19,16 +19,18 @@ use App\Livewire\Dashboard\Ganadores;
 */
 
 Route::get('/', function () {
+    if (auth()->check()) {
+        return redirect()->route('registro-compra');
+    }
     return view('welcome');
+})->name('home');
+
+Route::get('/register', Register::class)->middleware('guest')->name('register');
+
+Route::get('/login', Login::class)->middleware('guest')->name('login');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/registro-compra', RegistroCompra::class)->name('registro-compra');
+    Route::get('/galeria', Galeria::class)->name('galeria');
+    Route::get('/ganadores', Ganadores::class)->name('ganadores');
 });
-
-Route::get('/register', Register::class)->name('register');
-
-Route::get('/login', Login::class)->name('login');
-
-Route::get('/registro-compra', RegistroCompra::class)->middleware('auth')->name('registro-compra');
-
-Route::get('/galeria', Galeria::class)->middleware('auth')->name('galeria');
-
-Route::get('/ganadores', Ganadores::class)->middleware('auth')->name('ganadores');
-
