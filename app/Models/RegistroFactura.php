@@ -10,4 +10,8 @@ class RegistroFactura extends Model
     use HasFactory;
 
     protected $table = 'registro_factura';
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
