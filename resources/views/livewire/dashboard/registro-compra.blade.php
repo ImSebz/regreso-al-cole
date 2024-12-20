@@ -1,6 +1,5 @@
-<!-- filepath: /c:/laragon/www/regreso-al-cole/resources/views/livewire/dashboard/registro-compra.blade.php -->
 <div>
-    <h1>Registro de Compra</h1>
+    <h1>Registro de Compras</h1>
 
     <div class="foto-factura-cont">
         <label for="foto_factura">Foto factura:</label>
@@ -129,5 +128,5 @@
             $wire.upload('foto_portada', file, (uploadedFilename) => {});
         }
     </script>
-@endscript
+    
 </div>
