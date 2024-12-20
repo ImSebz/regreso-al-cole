@@ -6,6 +6,7 @@
     <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/galeria.css') }}">
     <title>Regreso al cole</title>
 </head>
 <body>
