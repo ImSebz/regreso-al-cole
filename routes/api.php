@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/user/{documento}', [InfoController::class, 'getUser']);
+Route::get('/factura/{user_id}', [InfoController::class, 'getUltimaFactura']);
