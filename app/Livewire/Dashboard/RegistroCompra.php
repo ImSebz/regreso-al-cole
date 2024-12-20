@@ -31,8 +31,8 @@ class RegistroCompra extends Component
         ]);
 
         $registroFactura = new RegistroFactura;
-        $registroFactura->foto_factura = $this->foto_factura->store('facturas', 'public');
-        $registroFactura->foto_portada = $this->foto_portada->store('portadas', 'public');
+        $registroFactura->foto_factura = $this->foto_factura->store(path: 'public/facturas');
+        $registroFactura->foto_portada = $this->foto_portada->store(path: 'public/portadas');
         $registroFactura->user_id = $user->id;
         $registroFactura->save();
 
