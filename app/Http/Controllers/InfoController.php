@@ -10,7 +10,7 @@ class InfoController extends Controller
 {
     public function getUser($documento){
         $user = User::where('cedula', $documento)->first();
-        return response()->json($user->only(['name', 'email', 'cedula']));
+        return response()->json($user->only(['id', 'name', 'email', 'cedula']));
     }
 
     public function getUltimaFactura($user_id){
