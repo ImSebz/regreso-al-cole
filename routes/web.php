@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Auth\Register;
 use App\Livewire\Auth\Login;
 use App\Livewire\Dashboard\RegistroCompra;
+use App\Livewire\Dashboard\Galeria;
+use App\Livewire\Dashboard\Ganadores;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +27,8 @@ Route::get('/register', Register::class)->name('register');
 Route::get('/login', Login::class)->name('login');
 
 Route::get('/registro-compra', RegistroCompra::class)->middleware('auth')->name('registro-compra');
+
+Route::get('/galeria', Galeria::class)->middleware('auth')->name('galeria');
+
+Route::get('/ganadores', Ganadores::class)->middleware('auth')->name('ganadores');
+

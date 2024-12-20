@@ -11,5 +11,6 @@
     <p>Regístrate para acceder a todos los beneficios</p>
     <a href="{{ route('register') }}">Regístrate</a>
     <a href="{{ route('login') }}">Iniciar Sesión</a>
+
 </body>
 </html>
