@@ -10,6 +10,6 @@ class InfoController extends Controller
     public function getUser($documento){
         $user = User::where('cedula', $documento)->first();
 
-        return response()->json($user->only(['name', 'email', 'documento']));
+        return response()->json($user->only(['name', 'email', 'cedula']));
     }
 } 
