@@ -37,7 +37,7 @@
     <div class="registrar-compra-btn">
         <button wire:click="storeCompra" id="registrar_compra">REGISTRAR COMPRA</button>
     </div>
-
+@script
     <script>
         const MAX_WIDTH = 1020;
         const MAX_HEIGHT = 980;
@@ -129,4 +129,5 @@
             $wire.upload('foto_portada', file, (uploadedFilename) => {});
         }
     </script>
+@endscript
 </div>
