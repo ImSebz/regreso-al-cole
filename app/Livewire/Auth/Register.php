@@ -72,8 +72,8 @@ class Register extends Component
         Auth::login($user);
 
         return redirect()->route('registro-compra')->with([
-            'title' => '¡Bienvenido/a!',
-            'register-success' => 'Registro exitoso. Ahora puedes disfrutar de nuestros servicios.'
+            'title' => '¡Gracias!',
+            'register-success' => 'Ya estas registrado en nuestra promoción. Continua con el registro de la factura y dibujo'
         ]);
     }
 

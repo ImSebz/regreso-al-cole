@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/galeria.css') }}">
     <title>Regreso al cole</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -56,8 +57,6 @@
                 x.parentNode.insertBefore(s, x);
             }
         }
-
-       
     </script>
 </body>
 

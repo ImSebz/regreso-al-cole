@@ -40,8 +40,8 @@ class RegistroCompra extends Component
 
         $this->resetFields();
         return redirect()->route('registro-compra')->with([
-            'title' => 'Registro exitoso.',
-            'success' => 'Registro de compra exitoso.'
+            'title' => '¡Gracias por tu registro!.',
+            'compra-success' => 'Nos encontramos validando tu factura de compra y tu dibujo, nos contactaremos en breve (Máximo 2 días hábiles).'
         ]);      
     }
 
