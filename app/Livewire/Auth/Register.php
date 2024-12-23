@@ -99,7 +99,7 @@ class Register extends Component
     } 
 
     public function updatedFechaNacimiento(){
-        $this->validate(['fecha_nacimiento' => 'required|date']);
+        $this->validate(['fecha_nacimiento' => 'required|date|before:2006-12-31']);
     }
 
     public function updatedAceptarTyc(){
