@@ -1,11 +1,25 @@
-<!-- filepath: /c:/laragon/www/regreso-al-cole/resources/views/livewire/dashboard/galeria.blade.php -->
-<div>
-    <h1>Galería</h1>
-    <div class="galeria">
-        @foreach ($fotosPortada as $foto)
-            <div class="galeria-item">
-                <img class="galeria-img" src="{{ Storage::url($foto) }}" alt="Foto de Portada">
-            </div>
-        @endforeach
+<div class="main-galeria-container">
+    <div class="galeria-container">
+        <h1>Galería</h1>
+        <div class="galeria">
+            @foreach ($fotosPortada as $foto)
+                <div class="galeria-item">
+                    <img class="galeria-img" src="{{ Storage::url($foto) }}" alt="Foto de Portada">
+                </div>
+            @endforeach
+        </div>
     </div>
 </div>
+
+@script
+    @if (session('compra-success'))
+        <script>
+            Swal.fire({
+                title: '{{ session('title') }}',
+                text: '{{ session('compra-success') }}',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            });
+        </script>
+    @endif
+@endscript

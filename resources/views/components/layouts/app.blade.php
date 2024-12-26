@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/galeria.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/ganadores.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/registro-compra.css') }}">
     <title>Regreso al cole</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
