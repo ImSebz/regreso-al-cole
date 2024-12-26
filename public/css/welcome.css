@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Sweet-Chocolate';
+    src: url(../fonts/Sweet-Chocolate.otf);
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-image: url('../assets/fondo.png');
+    padding: 15px;
+}
+
+.welcome-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/fondo-items-welcome.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome-logo {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.top-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.top-logo img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.bot-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bot-logo img {
+    width: 100%;
+    max-width: 270px;
+}
+
+.welcome-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+
+}
+
+.welcome-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.welcome-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Sweet-Chocolate';
+    font-size: 2.3rem;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#entrar_btn {
+    background-color: #FF6700;
+}
+
+#registrar_btn {
+    background-color: #FF36D4;
+}
+.welcome-premios-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.welcome-premios-img img {
+    width: 85%;
+}
+
+/* Mobile media query */
+
+@media screen and (max-width: 768px) {
+
+}
+
