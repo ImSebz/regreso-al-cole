@@ -11,7 +11,9 @@ class Galeria extends Component
 
     public function mount()
     {
-        $this->fotosPortada = RegistroFactura::orderBy('created_at', 'asc')->pluck('foto_portada');
+        $this->fotosPortada = RegistroFactura::where('estado_portada', 1)
+            ->orderBy('created_at', 'asc')
+            ->pluck('foto_portada');
     }
 
     public function render()
