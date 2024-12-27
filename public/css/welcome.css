@@ -41,6 +41,18 @@
     margin-top: 50px;
 }
 
+.welcome-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.welcome-info img {
+    margin-right: 10px;
+    width: 60px;
+    height: auto;
+}
+
 .top-logo {
     display: flex;
     justify-content: center;
@@ -80,17 +92,24 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     gap: 20px;
+    margin-top: 150px;
 
 }
 
 .welcome-btn-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 50px;
     width: 100%;
+}
+
+.btn-with-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .welcome-btn {
@@ -114,14 +133,30 @@
     background-color: #FF6700;
 }
 
+#entrar_btn:hover {
+    background-color: #4DB04B;
+}
+
 #registrar_btn {
     background-color: #FF36D4;
 }
+
+#registrar_btn:hover {
+    background-color: #4DB04B;
+}
+
+.select-img {
+    margin-top: 15px;
+    width: 200px;
+    height: auto;
+}
+
 .welcome-premios-img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 50px;
 }
 
 .welcome-premios-img img {
@@ -130,7 +165,4 @@
 
 /* Mobile media query */
 
-@media screen and (max-width: 768px) {
-
-}
-
+@media screen and (max-width: 768px) {}
