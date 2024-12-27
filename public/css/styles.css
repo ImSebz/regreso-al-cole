@@ -6,6 +6,41 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Sweet-Chocolate';
+    src: url(../fonts/Sweet-Chocolate.otf);
+}
+
+@font-face {
+    font-family: 'CrosstenSoft Black';
+    src: url(../fonts/CrosstenSoft-Black.otf);
+}
+
+@font-face {
+    font-family: 'CrosstenSoft Bold';
+    src: url(../fonts/CrosstenSoft-Bold.otf);
+}
+
+@font-face {
+    font-family: 'CrosstenSoft Book';
+    src: url(../fonts/CrosstenSoft-Book.otf);
+}
+
+@font-face {
+    font-family: 'CrosstenSoft ExtraBold';
+    src: url(../fonts/CrosstenSoft-Extrabold.otf);
+}
+
+@font-face {
+    font-family: 'CrosstenSoft Extralight';
+    src: url(../fonts/CrosstenSoft-Extralight.otf);
+}
+
+@font-face {
+    font-family: 'CrosstenSoft Medium';
+    src: url(../fonts/CrosstenSoft-Medium.otf);
+}
+
 body {
     background-image: url('../assets/fondo.png');
     background-repeat: no-repeat;

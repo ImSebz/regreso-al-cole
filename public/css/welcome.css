@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Sweet-Chocolate';
-    src: url(../fonts/Sweet-Chocolate.otf);
-}
+
 
 .welcome-container {
     display: flex;
@@ -30,6 +27,12 @@
     background-size: cover;
 }
 
+.welcome-title, .welcome-info {
+    font-family: 'CrosstenSoft Black';
+}
+
+
+
 .welcome-logo {
     display: flex;
     position: absolute;
@@ -41,10 +44,21 @@
     margin-top: 50px;
 }
 
+.welcome-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+}
+
 .welcome-info p {
     display: flex;
     align-items: center;
+    width: 100%;
     margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
 .welcome-info img {
@@ -73,8 +87,8 @@
 }
 
 .bot-logo img {
-    width: 100%;
-    max-width: 200px;
+    width: 25%;
+    max-width: 190px;
 }
 
 .welcome-info-container {
@@ -91,10 +105,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: auto;
     gap: 20px;
     margin-top: 150px;
+    margin-left: 50px;
 
 }
 
@@ -160,7 +175,7 @@
 }
 
 .welcome-premios-img img {
-    width: 85%;
+    width: 75%;
 }
 
 /* Mobile media query */
