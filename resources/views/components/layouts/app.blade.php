@@ -17,16 +17,20 @@
 <body>
     @auth
         <header class="main-header">
+            <div class="header-logo">
+                <img src="{{ asset('assets/expresa-tus-colores-logo.png') }}" alt="Logo Expresa tus colores">
+
+            </div>
             <div class="header-menu">
                 <a href="{{ route('registro-compra') }}"
                     class="{{ request()->routeIs('registro-compra') ? 'active' : '' }}">Registro Compra</a>
                 <a href="{{ route('ganadores') }}"
                     class="{{ request()->routeIs('ganadores') ? 'active' : '' }}">Ganadores</a>
                 <a href="{{ route('galeria') }}" class="{{ request()->routeIs('galeria') ? 'active' : '' }}">Galería</a>
-            </div>
-            <div class="header-user" id="headerUser">
-                {{ Auth::user()->name }}
-                <img src="{{ asset('assets/arrow-down.png') }}" alt="Arrow Down" class="arrow-down">
+                <div class="header-user" id="headerUser">
+                    {{ Auth::user()->name }}
+                    <img src="{{ asset('assets/arrow-down.png') }}" alt="Arrow Down" class="arrow-down">
+                </div>
             </div>
         </header>
     @endauth

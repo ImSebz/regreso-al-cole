@@ -5,3 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-image: url('../assets/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registro-compra-container, .ganadores-container, .galeria-container {
+    margin-top: -200px;
+}
+
+.main-ganadores-container, .main-galeria-container, .main-registro-compra-container {
+    padding: 0 50px;
+}
