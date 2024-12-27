@@ -18,9 +18,10 @@
                     <img src="{{ asset('assets/expresa-tus-colores-logo.png') }}" alt="">
                 </div>
                 <div class="bot-logo">
-                    <img src="{{ asset('assets/sharpie-logo.png') }}" alt="">
-                    <img src="{{ asset('assets/papermate-logo.png') }}" alt="">
-                    <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="">
+                    <img src="{{ asset('assets/sharpie-logo.png') }}" alt="Sharpie Logo">
+                    <img src="{{ asset('assets/papermate-logo.png') }}" alt="Papermate Logo">
+                    <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="Prismacolor Logo">
+                    <img src="{{ asset('assets/kilometrico-logo.png') }}" alt="Kilometrico Logo">
                 </div>
             </div>
 
