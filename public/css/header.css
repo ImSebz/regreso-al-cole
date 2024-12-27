@@ -58,7 +58,11 @@
     z-index: 1000;
     width: 100%;
     margin-top: 75px;
-    margin-left: 100px;
+    margin-left: 50px;
+}
+
+.header-logo a {
+    z-index: 1000;
 }
 
 .header-user {

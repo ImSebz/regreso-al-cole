@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ asset('css/galeria.css') }}">
     <link rel="stylesheet" href="{{ asset('css/ganadores.css') }}">
     <link rel="stylesheet" href="{{ asset('css/registro-compra.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
     <title>Regreso al cole</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -18,8 +20,9 @@
     @auth
         <header class="main-header">
             <div class="header-logo">
-                <img src="{{ asset('assets/expresa-tus-colores-logo.png') }}" alt="Logo Expresa tus colores">
-
+                <a href="{{ url('/') }}">
+                    <img src="{{ asset('assets/expresa-tus-colores-logo.png') }}" alt="Logo Expresa tus colores">
+                </a>
             </div>
             <div class="header-menu">
                 <a href="{{ route('registro-compra') }}"
