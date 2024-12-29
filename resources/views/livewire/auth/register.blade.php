@@ -5,12 +5,12 @@
                 <label for="name" class="registro-label">Nombre</label>
                 <input type="text" wire:model="name" id="name" placeholder="Nombre Completo" class="registro-input">
                 @error('name')
-                    <span>{{ $message }}</span>
+                    <div class="text-invalid">{{ $message }}</div>
                 @enderror
                 <label for="cedula" class="registro-label">Cedula</label>
                 <input type="text" id="cedula" wire:model="cedula" placeholder="Número de cedula" class="registro-input">
                 @error('cedula')
-                    <span>{{ $message }}</span>
+                    <div class="text-invalid">{{ $message }}</div>
                 @enderror
 
                 <div class="input-group">
@@ -48,18 +48,18 @@
                 <label for="email" class="registro-label">Correo</label>
                 <input type="email" id="email" wire:model="email" placeholder="ejemplo@hotmail.com" class="registro-input">
                 @error('email')
-                    <span>{{ $message }}</span>
+                    <div class="text-invalid">{{ $message }}</div>
                 @enderror
                 <label for="celular" class="registro-label">Celular</label>
                 <input type="text" id="celular" wire:model="celular" placeholder="3000000000" class="registro-input">
                 @error('celular')
-                    <span>{{ $message }}</span>
+                    <div class="text-invalid">{{ $message }}</div>
                 @enderror
                 <label for="password" class="registro-label">Contraseña</label>
                 <input type="password" id="password" wire:model="password" placeholder="Contraseña"
                     class="registro-input">
                 @error('password')
-                    <span>{{ $message }}</span>
+                    <div class="text-invalid">{{ $message }}</div>
                 @enderror
                 <label for="password_confirmation" class="registro-label">Confirmar Contraseña</label>
                 <input type="password" id="password_confirmation" wire:model="password_confirmation"
@@ -69,7 +69,7 @@
                 <input type="date" id="fecha_nacimiento" wire:model="fecha_nacimiento"
                     placeholder="Fecha de Nacimiento" class="registro-input">
                 @error('fecha_nacimiento')
-                    <span>{{ $message }}</span>
+                    <div class="text-invalid">{{ $message }}</div>
                 @enderror
 
                 <div class="checks-container">
@@ -80,7 +80,7 @@
                                 rel="noopener noreferrer">T&C</a></label>
                     </div>
                     @error('aceptar_tyc')
-                        <span>{{ $message }}</span>
+                        <div class="text-invalid">{{ $message }}</div>
                     @enderror
 
                     <div class="check-item">
@@ -91,7 +91,7 @@
                                 rel="noopener noreferrer">Autorización*</a></label>
                     </div>
                     @error('aceptar_tratamiento_datos')
-                        <span>{{ $message }}</span>
+                        <div class="text-invalid">{{ $message }}</div>
                     @enderror
                 </div>
                 <div class="register-btn">

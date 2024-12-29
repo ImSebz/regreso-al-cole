@@ -28,7 +28,7 @@
 
 .registro-label {
     font-family: 'CrosstenSoft Bold';
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #000;
     margin: 10px 0;
 }
@@ -42,14 +42,15 @@
 
 .registro-input {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 2px 20px 2px 2px;
     font-family: 'CrosstenSoft ExtraLight';
-    font-size: 1rem;
+    font-size: 0.85rem;
     background-color: #fff;
     color: #333;
+    margin-bottom: 20px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -108,4 +109,12 @@
 
 .register-btn-enviar:hover {
     background-color: #4DB04B;
+}
+
+.text-invalid {
+    color: red;
+    font-family: 'CrosstenSoft ExtraLight';
+    font-size: 0.8rem;
+    margin-top: -15px;
+    margin-bottom: 5px;
 }
