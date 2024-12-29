@@ -25,6 +25,15 @@ class Login extends Component
         }
     }
 
+    public function messages()
+    {
+        return [
+            'email.required' => 'Oops, tu correo es obligatorio.',
+            'email.email' => 'Escribe un correo electrónico válido.',
+            'password.required' => 'Oops, no olvides tu contraseña.',
+        ];
+    }
+
     public function render()
     {
         return view('livewire.auth.login')->layout('components.layouts.app');

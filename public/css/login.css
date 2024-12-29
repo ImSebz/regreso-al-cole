@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     padding: 25px;
 }
 .login-box {
@@ -16,4 +16,49 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.login-inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box label {
+    font-family: 'CrosstenSoft Bold';
+    font-size: 1.2rem;
+    color: #000;
+    margin: 10px 0;
+}
+
+.login-input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 2px 20px 2px 2px;
+    font-family: 'CrosstenSoft ExtraLight';
+    font-size: 1rem;
+}
+
+.login-email, .login-password {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 500px;
+    margin-bottom: 20px;
+}
+
+.bot-logo-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bot-logo-login img {
+    width: 25%;
+    max-width: 190px;
 }
