@@ -72,21 +72,31 @@
                     <span>{{ $message }}</span>
                 @enderror
 
-                <input type="checkbox" wire:model="aceptar_tyc"> Aceptar <a
-                    href="{{ asset('assets/tyc-promocion-regreso-al-cole.pdf') }}" target="_blank"
-                    rel="noopener noreferrer">T&C</a>
-                @error('aceptar_tyc')
-                    <span>{{ $message }}</span>
-                @enderror
+                <div class="checks-container">
+                    <div class="check-item">
+                        <input type="checkbox" id="aceptar_tyc" wire:model="aceptar_tyc">
+                        <label for="aceptar_tyc" class="registro-label-check">Aceptar <a
+                                href="{{ asset('assets/tyc-promocion-regreso-al-cole.pdf') }}" target="_blank"
+                                rel="noopener noreferrer">T&C</a></label>
+                    </div>
+                    @error('aceptar_tyc')
+                        <span>{{ $message }}</span>
+                    @enderror
 
-                <input type="checkbox" wire:model="aceptar_tratamiento_datos">Autorizo el tratamiento de mis datos personales de conformidad con la siguiente <a
-                    href="https://privacy.newellbrands.com/index?language_id=4963328" target="_blank"
-                    rel="noopener noreferrer">Autorización</a>
-                @error('aceptar_tratamiento_datos')
-                    <span>{{ $message }}</span>
-                @enderror
-
-                <button type="submit">Enviar</button>
+                    <div class="check-item">
+                        <input type="checkbox" id="aceptar_tratamiento_datos" wire:model="aceptar_tratamiento_datos">
+                        <label for="aceptar_tratamiento_datos" class="registro-label-check">Autorizo el tratamiento de mis
+                            datos personales de conformidad con la siguiente <a
+                                href="https://privacy.newellbrands.com/index?language_id=4963328" target="_blank"
+                                rel="noopener noreferrer">Autorización*</a></label>
+                    </div>
+                    @error('aceptar_tratamiento_datos')
+                        <span>{{ $message }}</span>
+                    @enderror
+                </div>
+                <div class="register-btn">
+                    <button type="submit" class="register-btn-enviar">Enviar</button>
+                </div>
             </form>
         </div>
 
