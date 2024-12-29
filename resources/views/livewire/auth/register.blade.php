@@ -8,7 +8,7 @@
                     <span>{{ $message }}</span>
                 @enderror
                 <label for="cedula" class="registro-label">Cedula</label>
-                <input type="text" id="cedula" wire:model="cedula" placeholder="Cedula" class="registro-input">
+                <input type="text" id="cedula" wire:model="cedula" placeholder="Número de cedula" class="registro-input">
                 @error('cedula')
                     <span>{{ $message }}</span>
                 @enderror
@@ -46,12 +46,12 @@
                     </div>
                 </div>
                 <label for="email" class="registro-label">Correo</label>
-                <input type="email" id="email" wire:model="email" placeholder="Correo" class="registro-input">
+                <input type="email" id="email" wire:model="email" placeholder="ejemplo@hotmail.com" class="registro-input">
                 @error('email')
                     <span>{{ $message }}</span>
                 @enderror
                 <label for="celular" class="registro-label">Celular</label>
-                <input type="text" id="celular" wire:model="celular" placeholder="Celular" class="registro-input">
+                <input type="text" id="celular" wire:model="celular" placeholder="3000000000" class="registro-input">
                 @error('celular')
                     <span>{{ $message }}</span>
                 @enderror
