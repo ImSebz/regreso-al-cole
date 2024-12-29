@@ -7,7 +7,7 @@
 }
 .register-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -16,4 +16,49 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.register-inputs-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.registro-label {
+    font-family: 'CrosstenSoft Bold';
+    font-size: 1.1rem;
+    color: #000;
+    margin: 10px 0;
+}
+
+.registro-input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px 20px 2px 2px;
+    font-family: 'CrosstenSoft ExtraLight';
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333; /* Color del texto */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.registro-input:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: none;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espacio entre los inputs */
+}
+
+.input-cont {
+    flex: 1; /* Permite que los inputs ocupen el mismo espacio */
 }

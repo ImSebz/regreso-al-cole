@@ -94,8 +94,8 @@ class Register extends Component
         $this->validate(['celular' => 'required|numeric|max_digits:10|unique:users']);
     }
 
-    public function updatedCiudadId(){
-        $this->validate(['ciudad_id' => 'required|numeric']);
+    public function updatedCiudad(){
+        $this->validate(['ciudad' => 'required|numeric']);
     } 
 
     public function updatedFechaNacimiento(){
@@ -141,8 +141,8 @@ class Register extends Component
             'celular.max_digits' => "Oops, excediste el límite máximo de caracteres.",
             'celular.unique' => "Oops, este teléfono ya fué registrado.",
 
-            'ciudad_id.required' => "Oops, tu ciudad es obligatoria.",
-            'ciudad_id.numeric' => "Formato no valido.",
+            'ciudad.required' => "Oops, tu ciudad es obligatoria.",
+            'ciudad.numeric' => "Formato no valido.",
 
             'fecha_nacimiento.required' => "Oops, tu fecha de nacimiento es obligatoria.",
             'fecha_nacimiento.date' => "Formato no valido.",

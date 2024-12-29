@@ -4,22 +4,22 @@
             <form wire:submit.prevent="login">
                 <div class="login-email">
                     <label for="email">Correo</label>
-                    <input type="email" wire:model="email" class="login-input" placeholder="Ingresa tu correo">
+                    <input type="email" id="email" wire:model="email" class="login-input" placeholder="Ingresa tu correo">
                     @error('email')
                         <span>{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="login-password">
                     <label for="password">Contraseña</label>
-                    <input type="password" wire:model="password" class="login-input"
-                        placeholder="Ingresa tu contraseña">
+                    <input type="password" id="password" wire:model="password" class="login-input" placeholder="Ingresa tu contraseña">
                     @error('password')
                         <span>{{ $message }}</span>
                     @enderror
                 </div>
-                <input type="checkbox">
-                <p>Recuérdame</p>
-
+                <div class="login-remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Recuérdame</label>
+                </div>
                 <button type="submit">Login</button>
             </form>
 
