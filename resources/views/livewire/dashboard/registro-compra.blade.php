@@ -11,40 +11,46 @@
             </div>
         </div>
         <div class="main-fotos-cont">
-            <div class="foto-factura-cont">
-                <label for="foto_factura">Foto factura:</label>
-                <input type="file" id="foto_factura" accept="image/*" capture="user" style="display: none;">
-                <label for="foto_factura" class="custom-file-upload" id="imagePreviewFactura"
-                    style="{{ $foto_factura ? 'background-image: url(' . $foto_factura->temporaryUrl() . '); background-size: 75%;' : '' }}">
-                </label>
-                @error('foto_factura')
-                    <div class="text-invalid-factura">
-                        {{ $message }}
+            <div class="fotos-cont">
+                <div class="foto-factura-cont">
+                    <label for="foto_factura" class="fotos-label">Sube tu factura</label>
+                    <input type="file" id="foto_factura" accept="image/*" capture="user" style="display: none;">
+                    <div class="foto-factura-background">
+                        <label for="foto_factura" class="custom-file-upload" id="imagePreviewFactura"
+                        style="{{ $foto_factura ? 'background-image: url(' . $foto_factura->temporaryUrl() . '); background-size: 75%;' : '' }}">
+                    </label>
                     </div>
-                @enderror
-                <div wire:loading wire:target="foto_factura">
-                    Cargando...
+                    
+                    @error('foto_factura')
+                        <div class="text-invalid-factura">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                    <div wire:loading wire:target="foto_factura">
+                        Cargando...
+                    </div>
+                </div>
+    
+                <div class="foto-portada-cont">
+                    <label for="foto_portada" class="fotos-label">Sube tu dibujo</label>
+                    <input type="file" id="foto_portada" accept="image/*" capture="user" style="display: none;">
+                    <div class="foto-portada-background">
+                        <label for="foto_portada" class="custom-file-upload" id="imagePreviewPortada"
+                        style="{{ $foto_portada ? 'background-image: url(' . $foto_portada->temporaryUrl() . '); background-size: 75%;' : '' }}">
+                    </label>
+                    </div>
+                    @error('foto_portada')
+                        <div class="text-invalid-portada">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                    <div wire:loading wire:target="foto_portada">
+                        Cargando...
+                    </div>
                 </div>
             </div>
-
-            <div class="foto-portada-cont">
-                <label for="foto_portada">Foto Dibujo:</label>
-                <input type="file" id="foto_portada" accept="image/*" capture="user" style="display: none;">
-                <label for="foto_portada" class="custom-file-upload" id="imagePreviewPortada"
-                    style="{{ $foto_portada ? 'background-image: url(' . $foto_portada->temporaryUrl() . '); background-size: 75%;' : '' }}">
-                </label>
-                @error('foto_portada')
-                    <div class="text-invalid-portada">
-                        {{ $message }}
-                    </div>
-                @enderror
-                <div wire:loading wire:target="foto_portada">
-                    Cargando...
-                </div>
-            </div>
-
             <div class="registrar-compra-btn">
-                <button wire:click="storeCompra" id="registrar_compra">REGISTRAR COMPRA</button>
+                <button wire:click="storeCompra" id="registrar_compra">Enviar</button>
             </div>
         </div>
 
