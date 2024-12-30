@@ -184,3 +184,60 @@
     margin-top: -15px;
     margin-bottom: 5px;
 }
+
+/* Laptop media query 1366 x 768 */
+@media screen and (max-width: 1366px) {
+    .register-img-container img {
+        width: 50%;
+    }
+
+    .register-info-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .register-info-text p {
+        font-size: 0.9rem;
+    }
+
+    .registro-label {
+        font-size: 0.6rem;
+    }
+
+    .registro-input {
+        font-size: 0.55rem;
+        padding: 5px;
+        margin-bottom: 2px;
+    }
+
+    .registro-label-check {
+        font-size: 0.6rem;
+        margin: 0;
+        margin-top: 2px;
+    }
+
+    .check-item input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+    }
+
+    .register-btn {
+        margin-top: 10px;
+    }
+
+    .register-btn-enviar {
+        padding: 10px 30px;
+        font-size: 1.3rem;
+    }
+
+    .check-item {
+        margin-top: 10px;
+    }
+
+    .text-invalid {
+        color: red;
+        font-family: 'CrosstenSoft ExtraLight';
+        font-size: 0.5rem;
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+}
