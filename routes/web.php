@@ -29,6 +29,11 @@ Route::get('/register', Register::class)->middleware('guest')->name('register');
 
 Route::get('/login', Login::class)->middleware('guest')->name('login');
 
+Route::post('/logout', function () {
+    Auth::logout();
+    return redirect()->route('home');
+})->name('logout');
+
 Route::middleware(['auth'])->group(function () {
     Route::get('/registro-compra', RegistroCompra::class)->name('registro-compra');
     Route::get('/galeria', Galeria::class)->name('galeria');

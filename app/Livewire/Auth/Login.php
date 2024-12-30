@@ -21,7 +21,7 @@ class Login extends Component
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
             return redirect()->route('registro-compra');
         } else {
-            session()->flash('error', 'Invalid credentials');
+            session()->flash('error', 'Oops! Correo o contraseña incorrectos.');
         }
     }
 

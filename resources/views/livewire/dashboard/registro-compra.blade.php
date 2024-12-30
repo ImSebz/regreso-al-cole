@@ -1,42 +1,53 @@
 <div class="main-registro-compra-container">
     <div class="registro-compra-container">
-        <h1>Registro de Compras</h1>
-    
-        <div class="foto-factura-cont">
-            <label for="foto_factura">Foto factura:</label>
-            <input type="file" id="foto_factura" accept="image/*" capture="user" style="display: none;">
-            <label for="foto_factura" class="custom-file-upload" id="imagePreviewFactura"
-                style="{{ $foto_factura ? 'background-image: url(' . $foto_factura->temporaryUrl() . '); background-size: 75%;' : '' }}">
-            </label>
-            @error('foto_factura')
-                <div class="text-invalid-factura">
-                    {{ $message }}
-                </div>
-            @enderror
-            <div wire:loading wire:target="foto_factura">
-                Cargando...
+        <div class="main-info-cont">
+            <h1>Continúa con tu registro</h1>
+            <div class="info-text-cont">
+                <p>1. Registra tu factura por compra igual o superior a $30.000 en productos de nuestras marcas Paper Mate®, Sharpie®, Prismacolor®.</p>
+                <p>2. La factura debe incluir 1 caja de colores Paper Mate® y/o Prismacolor®.</p>
+                <p>3. Sube 1 foto con la factura* de compra  más los productos de las marcas  participantes.</p>
+                <p>4. Sube la foto de tu dibujo* hecho a mano.</p>
+
             </div>
         </div>
-    
-        <div class="foto-portada-cont">
-            <label for="foto_portada">Foto Dibujo:</label>
-            <input type="file" id="foto_portada" accept="image/*" capture="user" style="display: none;">
-            <label for="foto_portada" class="custom-file-upload" id="imagePreviewPortada"
-                style="{{ $foto_portada ? 'background-image: url(' . $foto_portada->temporaryUrl() . '); background-size: 75%;' : '' }}">
-            </label>
-            @error('foto_portada')
-                <div class="text-invalid-portada">
-                    {{ $message }}
+        <div class="main-fotos-cont">
+            <div class="foto-factura-cont">
+                <label for="foto_factura">Foto factura:</label>
+                <input type="file" id="foto_factura" accept="image/*" capture="user" style="display: none;">
+                <label for="foto_factura" class="custom-file-upload" id="imagePreviewFactura"
+                    style="{{ $foto_factura ? 'background-image: url(' . $foto_factura->temporaryUrl() . '); background-size: 75%;' : '' }}">
+                </label>
+                @error('foto_factura')
+                    <div class="text-invalid-factura">
+                        {{ $message }}
+                    </div>
+                @enderror
+                <div wire:loading wire:target="foto_factura">
+                    Cargando...
                 </div>
-            @enderror
-            <div wire:loading wire:target="foto_portada">
-                Cargando...
+            </div>
+
+            <div class="foto-portada-cont">
+                <label for="foto_portada">Foto Dibujo:</label>
+                <input type="file" id="foto_portada" accept="image/*" capture="user" style="display: none;">
+                <label for="foto_portada" class="custom-file-upload" id="imagePreviewPortada"
+                    style="{{ $foto_portada ? 'background-image: url(' . $foto_portada->temporaryUrl() . '); background-size: 75%;' : '' }}">
+                </label>
+                @error('foto_portada')
+                    <div class="text-invalid-portada">
+                        {{ $message }}
+                    </div>
+                @enderror
+                <div wire:loading wire:target="foto_portada">
+                    Cargando...
+                </div>
+            </div>
+
+            <div class="registrar-compra-btn">
+                <button wire:click="storeCompra" id="registrar_compra">REGISTRAR COMPRA</button>
             </div>
         </div>
-    
-        <div class="registrar-compra-btn">
-            <button wire:click="storeCompra" id="registrar_compra">REGISTRAR COMPRA</button>
-        </div>
+
         @script
             @if (session('register-success'))
                 <script>
@@ -48,16 +59,16 @@
                     });
                 </script>
             @endif
-    
+
             <script>
                 const MAX_WIDTH = 1020;
                 const MAX_HEIGHT = 980;
                 const MIME_TYPE = "image/jpeg";
                 const QUALITY = 0.9;
-    
+
                 const foto_factura = document.getElementById("foto_factura");
                 const foto_portada = document.getElementById("foto_portada");
-    
+
                 foto_factura.onchange = (ev) => {
                     const file = ev.target.files[0];
                     const blobURL = URL.createObjectURL(file);
@@ -84,7 +95,7 @@
                             QUALITY);
                     };
                 };
-    
+
                 foto_portada.onchange = (ev) => {
                     const file = ev.target.files[0];
                     const blobURL = URL.createObjectURL(file);
@@ -111,11 +122,11 @@
                             QUALITY);
                     };
                 };
-    
+
                 const calculateSize = (img, maxWidth, maxHeight) => {
                     let width = img.width;
                     let height = img.height;
-    
+
                     // calculate the width and height, constraining the proportions
                     if (width > height) {
                         if (width > maxWidth) {
@@ -128,14 +139,14 @@
                             height = maxHeight;
                         }
                     }
-    
+
                     return [width, height];
                 }
-    
+
                 const upload_foto_factura = (file) => {
                     $wire.upload('foto_factura', file, (uploadedFilename) => {});
                 }
-    
+
                 const upload_foto_portada = (file) => {
                     $wire.upload('foto_portada', file, (uploadedFilename) => {});
                 }
