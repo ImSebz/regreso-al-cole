@@ -32,17 +32,37 @@
 .main-info-cont h1 {
     font-family: 'CrosstenSoft Bold';
     font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-top: 20px;
     color: #000;
     text-transform: uppercase;
+}
+
+.info-text-cajas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-logos-bonos{
+    width: 70%;
+    max-width: 300px;
+}
+
+.img-logo-cajas{
+    width: 50%;
+    max-width: 300px;
 }
 
 .info-text-cont {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
     width: 70%;
-    margin-top: 20px;
     font-family: 'CrosstenSoft ExtraLight';
     font-size: 1.2rem;
     line-height: 1.4;
