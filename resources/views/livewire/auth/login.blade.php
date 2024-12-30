@@ -28,7 +28,7 @@
                     
                 </div>
                 <div class="login-btn-container">
-                    <button type="submit" class="login-btn">Iniciar sesion</button>
+                    <button type="submit" class="login-btn">Entrar</button>
                 </div>
             </form>
 

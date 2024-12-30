@@ -5,7 +5,7 @@
                 <img src="{{ asset('assets/registrarme-img.png') }}" alt="">
             </div>
             <div class="register-info-text">
-                <h2>Ten encuenta que:</h2>
+                <h2>Ten en cuenta:</h2>
                 <p>Para poder registrarte y participar debes ser mayor de 18 años.</p>
             </div>
             <div class="register-text-logo">

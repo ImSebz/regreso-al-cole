@@ -39,7 +39,7 @@
                             <a class="welcome-btn" id="entrar_btn" href="{{ route('login') }}">Entra</a>
                             <img src="{{ asset('assets/select-img.png') }}" alt="Select Image" class="select-img">
                         </div>
-                        <a class="welcome-btn" id="registrar_btn" href="{{ route('register') }}">Registrate</a>
+                        <a class="welcome-btn" id="registrar_btn" href="{{ route('register') }}">Registrarme</a>
                     </div>
                 </div>
                 <div class="welcome-premios-img">

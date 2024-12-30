@@ -43,19 +43,20 @@
 
 .register-info-text {
     display: flex;
-    font-family: 'CrosstenSoft Bold';
     flex-direction: column;
     width: 100%;
 }
 
 .register-info-text h2 {
     font-size: 1.7rem;
+    font-family: 'CrosstenSoft Bold';
     color: #FF6700;
     margin-bottom: 10px;
 }
 
 .register-info-text p {
     font-size: 1.3rem;
+    font-family: 'CrosstenSoft ExtraLight';
     color: #000;
 }
 
