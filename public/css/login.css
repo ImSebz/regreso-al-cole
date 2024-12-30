@@ -170,6 +170,13 @@
     height: auto;
 }
 
+.text-invalid-login {
+    color: red;
+    font-family: 'CrosstenSoft ExtraLight';
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
 /* Laptop media query 1366 x 768 */
 
 @media screen and (max-width: 1366px) {

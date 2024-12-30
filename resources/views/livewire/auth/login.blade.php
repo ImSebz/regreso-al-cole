@@ -9,14 +9,14 @@
                     <label for="email">Correo</label>
                     <input type="email" id="email" wire:model="email" class="login-input" placeholder="Ingresa tu correo">
                     @error('email')
-                        <span>{{ $message }}</span>
+                        <span class="text-invalid-login">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="login-password">
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" wire:model="password" class="login-input" placeholder="Ingresa tu contraseña">
                     @error('password')
-                        <span>{{ $message }}</span>
+                        <span class="text-invalid-login">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="login-remember">
@@ -33,7 +33,7 @@
             </form>
 
             @if (session()->has('error'))
-                <span>{{ session('error') }}</span>
+                <span class="text-invalid-login">{{ session('error') }}</span>
             @endif
         </div>
         <div class="bot-logo-login">
