@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{{ asset('css/registro-compra.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="{{ asset('css/register.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v={{ time() }}">
     <title>Regreso al cole</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
