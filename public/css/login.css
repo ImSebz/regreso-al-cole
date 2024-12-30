@@ -178,12 +178,21 @@
         margin-bottom: 20px;
     }
     .login-img-container img {
-        width: 30%;
+        width: 25%;
+        margin-top: 10px;
+    }
+
+    .login-email, .login-password {
+        margin-bottom: 10px;
     }
 
     .login-input {
         padding: 10px;
         font-size: 0.9rem;
+    }
+
+    .login-box label {
+        font-size: 1.1rem;
     }
 
     .login-remember {
@@ -192,11 +201,31 @@
         margin-top: 10px;
     }
 
+    .login-remember p {
+        font-size: 1.1rem;
+    }
+
+    .login-remember-checkbox label {
+        font-size: 0.9rem;
+    }
+
+    .login-remember-checkbox input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+
     .sharpie-logo-img img {
         width: 60%;
     }
 
+
     .bot-logo-login img {
         width: 12%;
+    }
+
+    .login-btn {
+        padding: 5px 15px;
+        margin-top: 10px;
+        font-size: 2rem;
     }
 }
