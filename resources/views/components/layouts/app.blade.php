@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/galeria.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/ganadores.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/registro-compra.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/header.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/galeria.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/ganadores.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/registro-compra.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/register.css') }}?v={{ time() }}">
     <title>Regreso al cole</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
