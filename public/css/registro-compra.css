@@ -172,7 +172,7 @@
     .main-info-cont {
         width: 60%;
         margin-left: 50px;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .main-info-cont h1 {
@@ -182,6 +182,16 @@
     .info-text-cont {
         width: 80%;
         font-size: 0.9rem;
+    }
+
+    .img-logos-bonos{
+        width: 50%;
+        max-width: 300px;
+    }
+    
+    .img-logo-cajas{
+        width: 50%;
+        max-width: 300px;
     }
 
     .main-fotos-cont {
