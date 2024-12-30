@@ -33,6 +33,20 @@
     margin-bottom: 5px;
 }
 
+.login-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: -40px;
+}
+
+.login-img-container img {
+    width: 40%;
+    max-width: 600px;
+}
+
 .login-input {
     width: 100%;
     padding: 15px;
@@ -143,4 +157,15 @@
 .login-btn:hover {
     background-color: #22C94B;
     color: #000;
+}
+
+.sharpie-logo-img {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+}
+
+.sharpie-logo-img img {
+    width: 70%;
+    height: auto;
 }

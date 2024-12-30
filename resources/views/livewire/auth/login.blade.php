@@ -1,5 +1,8 @@
 <div class="login-container">
     <div class="login-box">
+        <div class="login-img-container">
+            <img src="{{ asset('assets/iniciar-sesion-img.png') }}" alt="">
+        </div>
         <div class="login-inputs-container">
             <form wire:submit.prevent="login" class="login-form">
                 <div class="login-email">
@@ -38,6 +41,9 @@
             <img src="{{ asset('assets/papermate-logo.png') }}" alt="Papermate Logo">
             <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="Prismacolor Logo">
             <img src="{{ asset('assets/kilometrico-logo.png') }}" alt="Kilometrico Logo">
+        </div>
+        <div class="sharpie-logo-img">
+            <img src="{{ asset('assets/sharpie-asset.png') }}" alt="Sharpie Logo">
         </div>
     </div>
 </div>
