@@ -67,7 +67,9 @@
 }
 
 .register-text-logo img {
-    width: 100%;
+    display: relative;
+    margin-left: -500px;
+    width: 150%;
 }
 
 .register-bot-logo {
@@ -228,6 +230,12 @@
         padding: 10px 30px;
         font-size: 1.3rem;
     }
+
+    .register-text-logo img {
+        width: 150%;
+        margin-left: -300px;
+    }
+    
 
     .check-item {
         margin-top: 10px;

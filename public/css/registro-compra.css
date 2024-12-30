@@ -144,3 +144,61 @@
 .registrar-compra-btn button:hover {
     background-color: #FF6700;
 }
+
+/* Laptop media query 1366 x 768 */
+
+@media screen and (max-width: 1366px) { 
+
+    .main-info-cont {
+        width: 60%;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .main-info-cont h1 {
+        font-size: 1.4rem;
+    }
+
+    .info-text-cont {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    .main-fotos-cont {
+        margin-top: 80px;
+    }
+
+    .fotos-cont {
+        gap: 20px;
+    }
+
+    .foto-factura-cont, .foto-portada-cont {
+        width: 100%;
+    }
+
+    .fotos-label {
+        font-size: 2.3rem;
+    }
+
+    .foto-factura-background, .foto-portada-background {
+        height: 350px;
+    }
+
+    .custom-file-upload {
+        line-height: 150px;
+    }
+
+    .text-invalid-factura, .text-invalid-portada {
+        font-size: 12px;
+    }
+
+    .registrar-compra-btn {
+        margin-top: 10px;
+    }
+
+    .registrar-compra-btn button {
+        padding: 10px 40px;
+        font-size: 2rem;
+    }
+
+}
