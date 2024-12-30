@@ -41,6 +41,15 @@
                 </div>
             </div>
         </header>
+
+        <div id="floatingMenu" class="floating-menu">
+            <button id="closeMenu" class="close-menu">X</button>
+            <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Cerrar
+                sesión</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        </div>
     @endauth
 
     <main>
@@ -48,6 +57,16 @@
     </main>
 
     <script>
+        document.getElementById('headerUser').addEventListener('click', function() {
+            const menu = document.getElementById('floatingMenu');
+            menu.classList.toggle('show');
+        });
+
+        document.getElementById('closeMenu').addEventListener('click', function() {
+            const menu = document.getElementById('floatingMenu');
+            menu.classList.remove('show');
+        });
+
         window.addEventListener('mouseover', initLandbot, {
             once: true
         });
