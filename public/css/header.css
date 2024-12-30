@@ -122,3 +122,25 @@
     cursor: pointer;
     margin-bottom: 20px;
 }
+
+/* Laptop media query 1366 x 768 */
+
+@media screen and (max-width: 1366px) {
+    .header-menu {
+        gap: 50px;
+    }
+
+    .header-menu a {
+        width: 200px;
+        font-size: 1.1rem;
+    }
+
+    .header-logo img {
+        min-width: 250px;
+    }
+
+    .header-user {
+        max-width: 100px;
+        font-size: 1.1rem;
+    }
+}
