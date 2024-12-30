@@ -35,8 +35,6 @@
     font-size: 2rem;
 }
 
-
-
 .welcome-logo {
     display: flex;
     position: absolute;
@@ -179,6 +177,43 @@
 
 .welcome-premios-img img {
     width: 100%;
+}
+
+/* Laptop media query 1366 x 768 */
+
+@media screen and (max-width: 1366px) {
+
+    .welcome-logo {
+        margin-top: 25px;
+    }
+
+    .top-logo img {
+        width: 28%;
+    }
+
+    .bot-logo img {
+        width: 9.5%;
+    }
+    .welcome-title {
+        font-size: 1.2rem;
+    }
+    .welcome-info p {
+        font-size: 0.9rem;
+    }
+
+    .select-img {
+        width: 150px;
+    }
+
+    .welcome-premios-img img {
+        width: 90%;
+    }
+
+    .welcome-btn {
+        width: 150px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
 }
 
 /* Mobile media query */
