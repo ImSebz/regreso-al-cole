@@ -1,7 +1,7 @@
 <div class="login-container">
     <div class="login-box">
         <div class="login-inputs-container">
-            <form wire:submit.prevent="login">
+            <form wire:submit.prevent="login" class="login-form">
                 <div class="login-email">
                     <label for="email">Correo</label>
                     <input type="email" id="email" wire:model="email" class="login-input" placeholder="Ingresa tu correo">
@@ -17,10 +17,16 @@
                     @enderror
                 </div>
                 <div class="login-remember">
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Recuérdame</label>
+                    <p>¿Olvidaste tu contraseña?</p>
+                    <div class="login-remember-checkbox">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Recuérdame</label>
+                    </div>
+                    
                 </div>
-                <button type="submit">Login</button>
+                <div class="login-btn-container">
+                    <button type="submit" class="login-btn">Iniciar sesion</button>
+                </div>
             </form>
 
             @if (session()->has('error'))

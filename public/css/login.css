@@ -28,7 +28,7 @@
 
 .login-box label {
     font-family: 'CrosstenSoft Bold';
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #000;
     margin: 10px 0;
 }
@@ -53,6 +53,14 @@
     outline: none;
 }
 
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
 .login-email, .login-password {
     display: flex;
     flex-direction: column;
@@ -71,4 +79,66 @@
 .bot-logo-login img {
     width: 25%;
     max-width: 190px;
+}
+
+.login-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.login-remember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    gap: 15px;
+    padding: 20px 15px;
+    margin-top: 20px;
+    background-color: #545454;
+}
+
+.login-remember p {
+    font-family: 'CrosstenSoft Book';
+    font-size: 1rem;
+    color: #fff;
+}
+
+.login-remember-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-remember-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.login-remember-checkbox label {
+    font-family: 'CrosstenSoft Book';
+    font-size: 1rem;
+    color: #fff;
+}
+
+.login-btn {
+    background-color: #FF6700;
+    border: none;
+    padding: 15px 30px;
+    font-family: 'Sweet-Chocolate';
+    font-size: 2rem;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #22C94B;
+    color: #000;
 }
