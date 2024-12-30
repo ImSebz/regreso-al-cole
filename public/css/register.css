@@ -12,10 +12,76 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    gap: 100px;
     background-image: url('../assets/fondo-items-welcome.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.info-register-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+}
+
+.register-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.register-img-container img {
+    width: 70%;
+    max-width: 500px;
+}
+
+.register-info-text {
+    display: flex;
+    font-family: 'CrosstenSoft Bold';
+    flex-direction: column;
+    width: 100%;
+}
+
+.register-info-text h2 {
+    font-size: 1.7rem;
+    color: #FF6700;
+    margin-bottom: 10px;
+}
+
+.register-info-text p {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.register-text-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.register-text-logo img {
+    width: 100%;
+}
+
+.register-bot-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.register-bot-logo img {
+    width: 25%;
+    max-width: 600px;
 }
 
 .register-inputs-container  {

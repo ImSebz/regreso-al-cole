@@ -1,5 +1,23 @@
 <div class="register-container">
     <div class="register-box">
+        <div class="info-register-container">
+            <div class="register-img-container">
+                <img src="{{ asset('assets/registrarme-img.png') }}" alt="">
+            </div>
+            <div class="register-info-text">
+                <h2>Ten encuenta que:</h2>
+                <p>Para poder registrarte y participar debes ser mayor de 18 años.</p>
+            </div>
+            <div class="register-text-logo">
+                <img src="{{ asset('assets/colores-logo.png') }}" alt="Colores logos">
+            </div>
+            <div class="register-bot-logo">
+                <img src="{{ asset('assets/sharpie-logo.png') }}" alt="Sharpie Logo">
+                <img src="{{ asset('assets/papermate-logo.png') }}" alt="Papermate Logo">
+                <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="Prismacolor Logo">
+                <img src="{{ asset('assets/kilometrico-logo.png') }}" alt="Kilometrico Logo">
+            </div>
+        </div>
         <div class="register-inputs-container">
             <form wire:submit.prevent="register">
                 <label for="name" class="registro-label">Nombre</label>
