@@ -2,11 +2,13 @@
     <div class="registro-compra-container">
         <div class="main-info-cont">
             <h1>Regístrate y sé 1 de los 1200 ganadores</h1>
-            {{-- Logo Bonos --}}
+            {{-- <img src="{{ asset('assets/logo-bonos-home.png') }}" alt="Logos Bonos Home"> --}}
             <div class="info-text-cont">
                 {{-- <p>1. Registra tu factura por compra igual o superior a $30.000 en productos de nuestras marcas Paper Mate®, Sharpie®, Prismacolor®.</p> --}}
-                <p>1. Sube tu factura* debe incluir 1 caja de colores Paper Mate® y/o Prismacolor®.</p> 
-                {{-- Caja colores foto --}}
+                <div>
+                    <p>1. Sube tu factura* debe incluir 1 caja de colores Paper Mate® y/o Prismacolor®.</p> 
+                    {{-- <img src="{{ asset('assets/logo-cajas-home.png') }}" alt="Logos Cajas Home"> --}}
+                </div>
                 <p>2. Sube la foto de tu dibujo* hecho a mano.</p>
                 {{-- Look&Feel --}}
 
