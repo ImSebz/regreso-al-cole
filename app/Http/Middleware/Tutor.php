@@ -16,7 +16,7 @@ class Tutor
     public function handle(Request $request, Closure $next): Response
     {
         if ($request->user()->rol_id != 1) {
-            return redirect()->route('dashboard');
+            return redirect()->route('dashboard-backoffice');
         }
 
         return $next($request);
