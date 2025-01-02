@@ -63,6 +63,7 @@
 
 .text-info-content {
     font-family: 'Heyhoo';
+    font-weight: lighter;
     width: 100%;
     margin-top: 10px;
     font-size: 1.2rem;
@@ -183,6 +184,22 @@
 
 .welcome-premios-img img {
     width: 100%;
+}
+
+.welcome-legales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.welcome-legales p {
+    font-family: 'Heyhoo';
+    font-size: 0.6rem;
+    color: #000;
+    text-align: center;
 }
 
 /* Laptop media query 1366 x 768 */
