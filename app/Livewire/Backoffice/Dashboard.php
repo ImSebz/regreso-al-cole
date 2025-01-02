@@ -61,7 +61,7 @@ class Dashboard extends Component
         return redirect()->back()->with('success', $message);
     }
 
-    // VALIDATIONS
+    // VALIDACIONES
     public function updatedNumFactura(){
         $this->validate([
             'num_factura' => ['required', 'alpha_num:ascii', new num_factura]
