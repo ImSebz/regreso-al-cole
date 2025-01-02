@@ -28,10 +28,10 @@
                     </a>
                 </div>
                 <div class="header-sub-logos">
-                        <img src="{{ asset('assets/sharpie-logo.png') }}" alt="Sharpie Logo">
-                        <img src="{{ asset('assets/papermate-logo.png') }}" alt="Papermate Logo">
-                        <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="Prismacolor Logo">
-                        <img src="{{ asset('assets/kilometrico-logo.png') }}" alt="Kilometrico Logo">
+                    <img src="{{ asset('assets/sharpie-logo.png') }}" alt="Sharpie Logo">
+                    <img src="{{ asset('assets/papermate-logo.png') }}" alt="Papermate Logo">
+                    <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="Prismacolor Logo">
+                    <img src="{{ asset('assets/kilometrico-logo.png') }}" alt="Kilometrico Logo">
 
                 </div>
             </div>
@@ -48,15 +48,17 @@
             </div>
         </header>
 
-        <div id="floatingMenu" class="floating-menu">
-            <button id="closeMenu" class="close-menu">X</button>
-            <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Cerrar
-                sesión</a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-            </form>
-        </div>
+
     @endauth
+
+    <div id="floatingMenu" class="floating-menu">
+        <button id="closeMenu" class="close-menu">X</button>
+        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Cerrar
+            sesión</a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+    </div>
 
     <main>
         {{ $slot }}
