@@ -60,14 +60,6 @@
             </div>
         </div>
     </div>
-    <div id="floatingMenu" class="floating-menu">
-        <button id="closeMenu" class="close-menu">X</button>
-        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Cerrar
-            sesión</a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            @csrf
-        </form>
-    </div>
 </body>
 <script>
     window.addEventListener('mouseover', initLandbot, {
