@@ -236,3 +236,65 @@
         font-size: 2rem;
     }
 }
+
+/* Mobile media query */
+@media screen and (max-width: 768px) {
+
+    .login-box {
+        padding: 15px;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .login-input {
+        min-width: 300px;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .login-email, .login-password {
+        min-width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .login-img-container img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .login-btn {
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+
+    .login-remember {
+        gap: 10px;
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .login-remember p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .login-remember-checkbox label {
+        font-size: 0.8rem;
+    }
+
+    .login-remember-checkbox input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    .sharpie-logo-img {
+        display: none;
+    }
+
+
+    .bot-logo-login img {
+        width: 23%;
+    }
+}
