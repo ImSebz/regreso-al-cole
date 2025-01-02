@@ -21,12 +21,14 @@
         <div class="register-inputs-container">
             <form wire:submit.prevent="register">
                 <label for="name" class="registro-label">Nombre</label>
-                <input type="text" wire:model="name" id="name" placeholder="Nombre Completo" class="registro-input">
+                <input type="text" wire:model="name" id="name" placeholder="Nombre Completo"
+                    class="registro-input">
                 @error('name')
                     <div class="text-invalid">{{ $message }}</div>
                 @enderror
                 <label for="cedula" class="registro-label">Cedula</label>
-                <input type="text" id="cedula" wire:model="cedula" placeholder="Número de cedula" class="registro-input">
+                <input type="text" id="cedula" wire:model="cedula" placeholder="Número de cedula"
+                    class="registro-input">
                 @error('cedula')
                     <div class="text-invalid">{{ $message }}</div>
                 @enderror
@@ -64,12 +66,14 @@
                     </div>
                 </div>
                 <label for="email" class="registro-label">Correo</label>
-                <input type="email" id="email" wire:model="email" placeholder="ejemplo@hotmail.com" class="registro-input">
+                <input type="email" id="email" wire:model="email" placeholder="ejemplo@hotmail.com"
+                    class="registro-input">
                 @error('email')
                     <div class="text-invalid">{{ $message }}</div>
                 @enderror
                 <label for="celular" class="registro-label">Celular</label>
-                <input type="text" id="celular" wire:model="celular" placeholder="3000000000" class="registro-input">
+                <input type="text" id="celular" wire:model="celular" placeholder="3000000000"
+                    class="registro-input">
                 @error('celular')
                     <div class="text-invalid">{{ $message }}</div>
                 @enderror
@@ -103,7 +107,8 @@
 
                     <div class="check-item">
                         <input type="checkbox" id="aceptar_tratamiento_datos" wire:model="aceptar_tratamiento_datos">
-                        <label for="aceptar_tratamiento_datos" class="registro-label-check">Autorizo el tratamiento de mis
+                        <label for="aceptar_tratamiento_datos" class="registro-label-check">Autorizo el tratamiento de
+                            mis
                             datos personales de conformidad con la siguiente <a
                                 href="https://privacy.newellbrands.com/index?language_id=4963328" target="_blank"
                                 rel="noopener noreferrer">Autorización*</a></label>
@@ -119,4 +124,28 @@
         </div>
 
     </div>
+
+    <script>
+        // Validación de fecha de nacimiento mayor de 18 años
+        window.onload = () => {
+            const fechaNacimiento = document.getElementById('fecha_nacimiento');
+            if (fechaNacimiento) {
+                let today = new Date();
+                let pastYear = today.getFullYear() - 18;
+                today.setFullYear(pastYear);
+                fechaNacimiento.max = today.toISOString().split("T")[0];
+            }
+
+        }
+
+        const fechaNacimiento = document.getElementById('fecha_nacimiento');
+        if (fechaNacimiento) {
+            fechaNacimiento.addEventListener('click', () => {
+                let today = new Date();
+                let pastYear = today.getFullYear() - 18;
+                today.setFullYear(pastYear);
+                fechaNacimiento.max = today.toISOString().split("T")[0];
+            });
+        }
+    </script>
 </div>
