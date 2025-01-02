@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="welcome-premios-img">
-                    <img src="{{ asset('assets/premios-home-dekstop.png') }}" alt="">
+                    <img src="{{ asset('assets/premios-home-dekstop-v1.png') }}" alt="">
                 </div>
             </div>
         </div>
