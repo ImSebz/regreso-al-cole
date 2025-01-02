@@ -47,7 +47,7 @@
 
 .welcome-info {
     display: flex;
-    
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -195,9 +195,11 @@
     .bot-logo img {
         width: 9.5%;
     }
+
     .welcome-title {
         font-size: 1.2rem;
     }
+
     .welcome-info p {
         font-size: 0.9rem;
     }
@@ -221,6 +223,9 @@
 
 @media screen and (max-width: 768px) {
 
+    body {
+        background-repeat: repeat !important;
+    }
 
     .welcome-container {
         padding: 15px;
