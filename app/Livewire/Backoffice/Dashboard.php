@@ -17,7 +17,7 @@ class Dashboard extends Component
 
     public function render()
     {
-        $RegistrosFactura = RegistroFactura::where('estado_id', 2)->paginate(5);
+        $RegistrosFactura = RegistroFactura::where('estado_id', 2)->paginate(9);
         return view('livewire.backoffice.dashboard', ['RegistrosFactura' => $RegistrosFactura]);
     }
 
@@ -28,13 +28,13 @@ class Dashboard extends Component
 
     public function validacionRegistro($validacion)
     {
-        $this->validate([
-            'num_factura' => ['required', 'alpha_num:ascii', new num_factura],
-            'aprobacion_portada' => ['required', 'numeric'],
-            'observaciones' => ['required', 'string']
-        ]);
-
         if ($validacion){
+            $this->validate([
+                'num_factura' => ['required', 'alpha_num:ascii', new num_factura],
+                'aprobacion_portada' => ['required', 'numeric'],
+                'observaciones' => ['required', 'string']
+            ]);
+
             $this->RegistroFactura->num_factura = $this->num_factura;
             $this->RegistroFactura->estado_id = 1;
             $this->RegistroFactura->estado_portada = $this->aprobacion_portada;
@@ -43,7 +43,11 @@ class Dashboard extends Component
 
             $message = 'Factura APROBADA exitosamente.';
         }else {
-            $this->RegistroFactura->num_factura = $this->num_factura;
+            $this->validate([
+                'observaciones' => ['required', 'string']
+            ]);
+
+            $this->RegistroFactura->num_factura = null;
             $this->RegistroFactura->estado_id = 4;
             $this->RegistroFactura->estado_portada = 4;
             $this->RegistroFactura->observaciones = $this->observaciones;

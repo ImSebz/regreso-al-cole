@@ -129,6 +129,9 @@
                     </div>
                 </div>
             @endforeach
+            <div class="card-body">
+                {{ $RegistrosFactura->links() }}
+            </div>
         </div>
     </div>
 </div>
