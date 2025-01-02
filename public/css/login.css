@@ -12,6 +12,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    gap: 20px;
     background-image: url('../assets/fondo-items-welcome.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +29,7 @@
 
 .login-box label {
     font-family: 'CrosstenSoft Bold';
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #000;
     margin-bottom: 5px;
 }
@@ -38,18 +39,17 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 50px;
-    margin-top: -40px;
+    margin-top: 40px;
+    margin-bottom: 25px;
 }
 
 .login-img-container img {
-    width: 40%;
-    max-width: 600px;
+    width: 25%;
 }
 
 .login-input {
     width: 100%;
-    padding: 15px;
+    padding: 13px;
     border: 1px solid #ccc;
     border-radius: 2px 20px 2px 2px;
     font-family: 'CrosstenSoft ExtraLight';
@@ -92,7 +92,7 @@
 
 .bot-logo-login img {
     width: 25%;
-    max-width: 190px;
+    max-width: 150px;
 }
 
 .login-btn-container {
@@ -100,8 +100,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .login-remember {
@@ -111,14 +111,14 @@
     flex-direction: column;
     width: 75%;
     gap: 15px;
-    padding: 20px 15px;
+    padding: 15px 10px;
     margin-top: 20px;
     background-color: #545454;
 }
 
 .login-remember p {
     font-family: 'CrosstenSoft Book';
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
 }
 
@@ -144,9 +144,9 @@
 .login-btn {
     background-color: #FF6700;
     border: none;
-    padding: 15px 30px;
+    padding: 10px 25px;
     font-family: 'Sweet-Chocolate';
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     margin-top: 20px;
     color: #000;
     text-transform: uppercase;
