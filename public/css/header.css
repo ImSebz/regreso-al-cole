@@ -158,7 +158,12 @@
         font-size: 1.1rem;
     }
 
+    .header-sub-logos {
+        margin-top: 10%;
+    }
+
     .main-logo img {
+        margin-top: 25px;
         min-width: 250px;
     }
 

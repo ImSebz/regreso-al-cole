@@ -24,14 +24,16 @@
 .main-info-cont {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 50%;
-    margin-left: 100px;
+    width: 40%;
+    margin-left: 5%;
     margin-top: 70px;
 }
 
 .main-info-cont h1 {
     font-family: 'CrosstenSoft Bold';
+    text-align: center;
     font-size: 1.7rem;
     margin-bottom: 5px;
     margin-top: 20px;
@@ -84,7 +86,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 20px;
     width: 100%;
 }
 
@@ -108,7 +109,7 @@
     padding: 20px;
     width: 100%;
     height: 500px;
-    max-width: 400px;
+    max-width: 80%;
 }
 
 .foto-factura-background {
