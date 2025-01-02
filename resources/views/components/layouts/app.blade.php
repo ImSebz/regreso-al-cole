@@ -44,11 +44,6 @@
                 <div class="header-user" id="headerUser">
                     {{ Auth::user()->name }}
                     <img src="{{ asset('assets/arrow-down.png') }}" alt="Arrow Down" class="arrow-down">
-                    {{-- Cerrar Sesion --}}
-                    {{-- <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                    <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Cerrar sesión</a> --}}
                 </div>
             </div>
         </header>

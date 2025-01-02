@@ -234,3 +234,85 @@
     }
 
 }
+
+/* Mobile media query */
+
+@media screen and (max-width: 768px) { 
+
+    .main-registro-compra-container {
+        height: 100%;
+    }
+
+    .registro-compra-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .main-info-cont {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 225px;
+        margin-bottom: 20px;
+    }
+
+    .main-info-cont h1 {
+        font-size: 1.2rem;
+    }
+
+    .main-fotos-cont {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .info-text-cont {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .img-logos-bonos{
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .img-logo-cajas{
+        margin-top: 10px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+
+    .fotos-cont {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foto-factura-cont, .foto-portada-cont {
+        width: 100%;
+    }
+
+    .fotos-label {
+        font-size: 1.8rem;
+    }
+
+    .foto-factura-background, .foto-portada-background {
+        height: 300px;
+    }
+
+    .custom-file-upload {
+        line-height: 100px;
+    }
+
+    .text-invalid-factura, .text-invalid-portada {
+        font-size: 10px;
+    }
+
+    .registrar-compra-btn {
+        margin-top: 25px;
+    }
+
+    .registrar-compra-btn button {
+        padding: 10px 40px;
+        font-size: 1.8rem;
+    }
+
+}

@@ -59,3 +59,11 @@ body {
     font-family: 'CrosstenSoft Bold';
 }
 
+/* Mobile media query */
+
+@media screen and (max-width: 768px) {
+    .main-ganadores-container, .main-galeria-container, .main-registro-compra-container {
+        padding: 0 15px;
+    }
+}
+

@@ -176,3 +176,36 @@
         width: 5%;
     }
 }
+
+/* Mobile media query  */
+@media screen and (max-width: 768px) {
+    .header-menu {
+        gap: 20px;
+    }
+
+    .header-menu a {
+        display: none;
+    }
+
+    .header-sub-logos {
+        margin-top: 5%;
+    }
+
+    .main-logo img {
+        margin-top: 10px;
+        min-width: 200px;
+    }
+
+    .header-user {
+        max-width: 80px;
+        font-size: 0.8rem;
+    }
+
+    .arrow-down {
+        height: 5px;
+    }
+
+    .header-sub-logos img {
+        width: 5%;
+    }
+}
