@@ -250,3 +250,111 @@
         margin-bottom: 2px;
     }
 }
+
+/* Mobile media query  */
+@media screen and (max-width: 768px) {
+
+    .register-container {
+        height: 100%;
+    }
+
+    .register-box {
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+    }
+
+    .info-register-container {
+        justify-content: center;
+        gap: 25px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .info-register-container {
+        width: 100%;
+    }
+
+    .register-img-container {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .register-img-container img {
+        width: 60%;
+        margin-top: 10px;
+    }
+    .register-bot-logo {
+        display: none;
+    }
+
+    .register-info-text {
+        width: 80%;
+    }
+
+    .register-info-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .register-info-text p {
+        font-size: 1rem;
+    }
+
+    .register-text-logo {
+        bottom: 0;
+        display: none;
+        
+    }
+
+    .register-text-logo img {
+        width: 100%;
+        margin-left: -300px;
+    }
+
+    .register-bot-logo img {
+        width: 40%;
+    }
+
+    .register-inputs-container {
+        width: 80%;
+    }
+
+    .registro-label {
+        font-size: 0.8rem;
+    }
+
+    .registro-input {
+        font-size: 0.7rem;
+        padding: 5px;
+        margin-bottom: 2px;
+    }
+
+    .registro-label-check {
+        font-size: 0.7rem;
+        margin: 0;
+        margin-top: 2px;
+    }
+
+    .check-item input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+    }
+
+    .register-btn-enviar {
+        padding: 10px 30px;
+        font-size: 1.3rem;
+    }
+
+    .register-btn {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .text-invalid {
+        color: red;
+        font-family: 'CrosstenSoft ExtraLight';
+        font-size: 0.5rem;
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+}

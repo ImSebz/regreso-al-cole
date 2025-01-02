@@ -30,9 +30,18 @@
                 <div class="welcome-info-text">
                     <h1 class="welcome-title">¿Cómo participar?</h1>
                     <div class="welcome-info">
-                        <p><img src="{{ asset('assets/registro1.png') }}" alt="Registro 1"> Regístrate.</p>
-                        <p><img src="{{ asset('assets/registro2.png') }}" alt="Registro 2"> Sube la factura de compra con la foto de los productos participantes más tu dibujo.</p>
-                        <p><img src="{{ asset('assets/registro3.png') }}" alt="Registro 3"> Podrás ser uno de los 150 ganadores semanales.</p>
+                        <div class="info-item">
+                            <img src="{{ asset('assets/registro1.png') }}" alt="Registro 1">
+                            <p class="text-info-content">Regístrate.</p>
+                        </div>
+                        <div class="info-item">
+                            <img src="{{ asset('assets/registro2.png') }}" alt="Registro 2">
+                            <p class="text-info-content">Sube la factura de compra con la foto de los productos participantes más tu dibujo.</p>
+                        </div>
+                        <div class="info-item">
+                            <img src="{{ asset('assets/registro3.png') }}" alt="Registro 3">
+                            <p class="text-info-content">Podrás ser uno de los <span class="bold-text">150 ganadores</span> semanales.</p>
+                        </div>
                     </div>
                     <div class="welcome-btn-container">
                         <div class="btn-with-image">

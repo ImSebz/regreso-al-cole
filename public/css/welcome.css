@@ -47,7 +47,6 @@
 
 .welcome-info {
     display: flex;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -55,17 +54,22 @@
     gap: 20px;
 }
 
-.welcome-info p {
+.info-item {
     display: flex;
-    font-family: 'CrosstenSoft ExtraLight';
     align-items: center;
     width: 100%;
-    margin-bottom: 10px;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.text-info-content {
+    font-family: 'CrosstenSoft ExtraLight';
+    width: 100%;
+    /* margin-bottom: 10px; */
     font-size: 1.3rem;
 }
 
-.welcome-info img {
-    margin-right: 20px;
+.info-item img {
+    margin-right: 10px;
     width: 60px;
     height: auto;
 }
@@ -200,7 +204,7 @@
         font-size: 1.2rem;
     }
 
-    .welcome-info p {
+    .text-info-content {
         font-size: 0.9rem;
     }
 
