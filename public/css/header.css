@@ -7,8 +7,6 @@
     width: 100%;
     font-family: 'Nunito', sans-serif;
     height: 79px;
-     position: sticky; /* Make the header sticky */
-    top: 0; /* Stick to the top of the viewport */
     z-index: 1000; 
 }
 
@@ -48,21 +46,46 @@
 .header-logo {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     width: 33%;
     height: 100%;
 }
 
-.header-logo img {
+.main-logo img {
     width: 100%;
-    min-width: 300px;
+    min-width: 400px;
     margin-top: 75px;
     margin-left: 50px;
 }
 
-.header-logo a {
+.main-logo a {
     z-index: 1000;
+}
+
+.header-sub-logos {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 13%;
+    margin-left: 5%;
+}
+
+.header-sub-logos img {
+    width: 25%;
+    max-width: 100px;
 }
 
 .header-user {
@@ -135,12 +158,16 @@
         font-size: 1.1rem;
     }
 
-    .header-logo img {
+    .main-logo img {
         min-width: 250px;
     }
 
     .header-user {
         max-width: 100px;
         font-size: 1.1rem;
+    }
+
+    .header-sub-logos img {
+        width: 5%;
     }
 }

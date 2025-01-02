@@ -22,9 +22,18 @@
     @auth
         <header class="main-header">
             <div class="header-logo">
-                <a href="{{ url('/') }}">
-                    <img src="{{ asset('assets/expresa-tus-colores-logo.png') }}" alt="Logo Expresa tus colores">
-                </a>
+                <div class="main-logo">
+                    <a href="{{ url('/') }}">
+                        <img src="{{ asset('assets/expresa-tus-colores-logo.png') }}" alt="Logo Expresa tus colores">
+                    </a>
+                </div>
+                <div class="header-sub-logos">
+                        <img src="{{ asset('assets/sharpie-logo.png') }}" alt="Sharpie Logo">
+                        <img src="{{ asset('assets/papermate-logo.png') }}" alt="Papermate Logo">
+                        <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="Prismacolor Logo">
+                        <img src="{{ asset('assets/kilometrico-logo.png') }}" alt="Kilometrico Logo">
+
+                </div>
             </div>
             <div class="header-menu">
                 <a href="{{ route('registro-compra') }}"
