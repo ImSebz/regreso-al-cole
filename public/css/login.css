@@ -28,7 +28,7 @@
 }
 
 .login-box label {
-    font-family: 'CrosstenSoft Bold';
+    font-family: 'Heyhoo';
     font-size: 1.1rem;
     color: #000;
     margin-bottom: 5px;
@@ -52,7 +52,7 @@
     padding: 13px;
     border: 1px solid #ccc;
     border-radius: 2px 20px 2px 2px;
-    font-family: 'CrosstenSoft ExtraLight';
+    font-family: 'Heyhoo';
     font-size: 1rem;
     background-color: #fff;
     margin-bottom: 10px;
@@ -117,7 +117,7 @@
 }
 
 .login-remember p {
-    font-family: 'CrosstenSoft Book';
+    font-family: 'Heyhoo';
     font-size: 1.2rem;
     color: #fff;
 }
@@ -136,7 +136,7 @@
 }
 
 .login-remember-checkbox label {
-    font-family: 'CrosstenSoft Book';
+    font-family: 'Heyhoo';
     font-size: 1rem;
     color: #fff;
 }
@@ -172,7 +172,7 @@
 
 .text-invalid-login {
     color: red;
-    font-family: 'CrosstenSoft ExtraLight';
+    font-family: 'Heyhoo';
     font-size: 0.9rem;
     margin-bottom: 5px;
 }

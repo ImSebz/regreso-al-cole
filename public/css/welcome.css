@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    height: 100%;
     padding: 15px;
 }
 
@@ -30,8 +30,8 @@
 
 
 .welcome-title {
-    font-family: 'CrosstenSoft Black';
-    font-size: 1.65rem;
+    font-family: 'Heyhoo';
+    font-size: 1.5rem;
 }
 
 .welcome-logo {
@@ -62,15 +62,15 @@
 }
 
 .text-info-content {
-    font-family: 'CrosstenSoft ExtraLight';
+    font-family: 'Heyhoo';
     width: 100%;
-    /* margin-bottom: 10px; */
+    margin-top: 10px;
     font-size: 1.2rem;
 }
 
 .info-item img {
     margin-right: 10px;
-    width: 55px;
+    width: 70%;
     height: auto;
 }
 
@@ -114,7 +114,7 @@
     width: 33%;
     height: auto;
     gap: 20px;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 50px;
 
 }
@@ -125,6 +125,7 @@
     align-items: flex-start;
     gap: 50px;
     width: 100%;
+    margin-top: 20px;
 }
 
 .btn-with-image {
@@ -177,12 +178,11 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .welcome-premios-img img {
     width: 100%;
-    max-width: 650px;
 }
 
 /* Laptop media query 1366 x 768 */
@@ -215,6 +215,15 @@
 
     .welcome-premios-img img {
         width: 90%;
+    }
+    .welcome-info-text {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 180px;
+    }
+
+    .info-item img {
+        width: 30%;
     }
 
     .welcome-btn {
@@ -277,6 +286,11 @@
 
     .welcome-premios-img img {
         width: 100%;
-        margin-top: -100px;
+        margin-top: 0;
+    }
+
+    .info-item img {
+        width: 33%;
+        margin-right: 0;
     }
 }

@@ -50,14 +50,14 @@
 
 .register-info-text h2 {
     font-size: 1.5rem;
-    font-family: 'CrosstenSoft Bold';
+    font-family: 'Heyhoo';
     color: #FF6700;
     margin-bottom: 10px;
 }
 
 .register-info-text p {
     font-size: 1.3rem;
-    font-family: 'CrosstenSoft ExtraLight';
+    font-family: 'Heyhoo';
     color: #000;
 }
 
@@ -97,14 +97,14 @@
 }
 
 .registro-label {
-    font-family: 'CrosstenSoft Bold';
+    font-family: 'Heyhoo';
     font-size: 0.9rem;
     color: #000;
     margin: 10px 0;
 }
 
 .registro-label-check {
-    font-family: 'CrosstenSoft Extralight';
+    font-family: 'Heyhoo';
     font-size: 0.8rem;
     color: #000;
     margin: 10px 0;
@@ -116,7 +116,7 @@
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 2px 20px 2px 2px;
-    font-family: 'CrosstenSoft ExtraLight';
+    font-family: 'Heyhoo';
     font-size: 0.85rem;
     background-color: #fff;
     color: #333;
@@ -183,7 +183,7 @@
 
 .text-invalid {
     color: red;
-    font-family: 'CrosstenSoft ExtraLight';
+    font-family: 'Heyhoo';
     font-size: 0.8rem;
     margin-top: -15px;
     margin-bottom: 5px;
@@ -245,7 +245,7 @@
 
     .text-invalid {
         color: red;
-        font-family: 'CrosstenSoft ExtraLight';
+        font-family: 'Heyhoo';
         font-size: 0.5rem;
         margin-top: 0;
         margin-bottom: 2px;
@@ -354,7 +354,7 @@
 
     .text-invalid {
         color: red;
-        font-family: 'CrosstenSoft ExtraLight';
+        font-family: 'Heyhoo';
         font-size: 0.5rem;
         margin-top: 0;
         margin-bottom: 2px;

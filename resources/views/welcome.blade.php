@@ -32,15 +32,15 @@
                     <div class="welcome-info">
                         <div class="info-item">
                             <img src="{{ asset('assets/registro1.png') }}" alt="Registro 1">
-                            <p class="text-info-content">Regístrate.</p>
+                            <p class="text-info-content"><span class="bold-text">$30.000</span> o más en productos de nuestras marcas, que incluya 1 caja de colores <span class="bold-text">Paper Mate®</span>  y/o <span class="bold-text">Prismacolor®</span></p>
                         </div>
                         <div class="info-item">
                             <img src="{{ asset('assets/registro2.png') }}" alt="Registro 2">
-                            <p class="text-info-content">Sube la factura de compra con la foto de los productos participantes más tu dibujo.</p>
+                            <p class="text-info-content">Pinta el dibujo que quieras y tómale una foto al dibujo, a la factura y a los productos comprados y súbelas.</p>
                         </div>
                         <div class="info-item">
                             <img src="{{ asset('assets/registro3.png') }}" alt="Registro 3">
-                            <p class="text-info-content">Podrás ser uno de los <span class="bold-text">150 ganadores</span> semanales.</p>
+                            <p class="text-info-content">Sé uno de los primeros <span class="bold-text">150 en participar</span> por semana y prepárate para ganar</p>
                         </div>
                     </div>
                     <div class="welcome-btn-container">

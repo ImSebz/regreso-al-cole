@@ -41,6 +41,11 @@
     src: url(../fonts/CrosstenSoft-Medium.otf);
 }
 
+@font-face {
+    font-family: 'Heyhoo';
+    src: url(../fonts/Heyhoo.otf);
+}
+
 body {
     background-image: url('../assets/fondo.png');
     background-repeat: no-repeat;
@@ -56,7 +61,8 @@ body {
 }
 
 .bold-text {
-    font-family: 'CrosstenSoft Bold';
+    font-family: 'Heyhoo';
+    font-weight: bold;
 }
 
 /* Mobile media query */

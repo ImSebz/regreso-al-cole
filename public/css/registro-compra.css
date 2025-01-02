@@ -32,7 +32,7 @@
 }
 
 .main-info-cont h1 {
-    font-family: 'CrosstenSoft Bold';
+    font-family: 'Heyhoo';
     text-align: center;
     font-size: 1.7rem;
     margin-bottom: 5px;
@@ -45,7 +45,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -64,10 +65,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 70%;
-    font-family: 'CrosstenSoft ExtraLight';
+    width: 100%;
+    font-family: 'Heyhoo';
     font-size: 1.2rem;
     line-height: 1.4;
+    margin-bottom: 5px;
 }
 
 
@@ -213,12 +215,11 @@
 
     .img-logos-bonos{
         width: 100%;
-        max-width: 250px;
     }
     
     .img-logo-cajas{
         margin-top: 10px;
-        width: 100%;
+        width: 70%;
         max-width: 250px;
     }
 
@@ -255,6 +256,11 @@
     .registrar-compra-btn button {
         padding: 10px 40px;
         font-size: 1.8rem;
+    }
+
+    .info-text-cajas {
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
 }
