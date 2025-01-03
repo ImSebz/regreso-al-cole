@@ -77,6 +77,7 @@
                 @error('celular')
                     <div class="text-invalid">{{ $message }}</div>
                 @enderror
+                {{-- Ojo para ver contraseña --}}
                 <label for="password" class="registro-label">Contraseña</label>
                 <input type="password" id="password" wire:model="password" placeholder="Contraseña"
                     class="registro-input">

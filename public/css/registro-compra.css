@@ -21,6 +21,10 @@
     background-size: cover;
 }
 
+.main-img-cont-mobile {
+    display: none;
+}
+
 .main-info-cont {
     display: flex;
     justify-content: center;
@@ -37,7 +41,7 @@
     font-size: 1.7rem;
     margin-bottom: 5px;
     margin-top: 20px;
-    color: #000;
+    color: #B5579E;
     text-transform: uppercase;
 }
 
@@ -194,6 +198,21 @@
         height: 100%;
     }
 
+    .main-img-cont-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        overflow: hidden;
+        align-items: center;
+        margin-top: 220px;
+    }
+
+    .main-img-cont-mobile img {
+        width: 26%;
+        height: auto;
+    }
+
     .registro-compra-container {
         flex-direction: column;
         padding: 10px;
@@ -202,7 +221,7 @@
     .main-info-cont {
         width: 80%;
         margin-left: 0;
-        margin-top: 225px;
+        margin-top: 10px;
         margin-bottom: 20px;
     }
 

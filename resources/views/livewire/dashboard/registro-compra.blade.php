@@ -1,12 +1,20 @@
 <div class="main-registro-compra-container">
     <div class="registro-compra-container">
+
+        <div class="main-img-cont-mobile">
+            <img src="{{ asset('assets/sharpie-logo.png') }}" alt="Sharpie Logo">
+            <img src="{{ asset('assets/papermate-logo.png') }}" alt="Papermate Logo">
+            <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="Prismacolor Logo">
+            <img src="{{ asset('assets/kilometrico-logo.png') }}" alt="Kilometrico Logo">
+        </div>
         <div class="main-info-cont">
             <h1>Regístrate y sé 1 de los 1200 ganadores</h1>
             <img src="{{ asset('assets/logo-bonos-home.png') }}" class="img-logos-bonos" alt="Logos Bonos Home">
             <div class="info-text-cont">
                 {{-- <p>1. Registra tu factura por compra igual o superior a $30.000 en productos de nuestras marcas Paper Mate®, Sharpie®, Prismacolor®.</p> --}}
                 <div class="info-text-cajas">
-                    <p>1. Sube tu factura* debe incluir 1 caja de colores <span class="bold-text">Paper Mate®</span> y/o <span class="bold-text">Prismacolor®</span>.</p> 
+                    <p>1. Sube tu factura* debe incluir 1 caja de colores <span class="bold-text">Paper Mate®</span> y/o
+                        <span class="bold-text">Prismacolor®</span>.</p>
                     <img src="{{ asset('assets/logo-cajas-home.png') }}" class="img-logo-cajas" alt="Logos Cajas Home">
                 </div>
                 <div class="info-text-dibujo">
@@ -23,10 +31,10 @@
                     <input type="file" id="foto_factura" accept="image/*" capture="user" style="display: none;">
                     <div class="foto-factura-background">
                         <label for="foto_factura" class="custom-file-upload" id="imagePreviewFactura"
-                        style="{{ $foto_factura ? 'background-image: url(' . $foto_factura->temporaryUrl() . '); background-size: 75%;' : '' }}">
-                    </label>
+                            style="{{ $foto_factura ? 'background-image: url(' . $foto_factura->temporaryUrl() . '); background-size: 75%;' : '' }}">
+                        </label>
                     </div>
-                    
+
                     @error('foto_factura')
                         <div class="text-invalid-factura">
                             {{ $message }}
@@ -36,14 +44,14 @@
                         Cargando...
                     </div>
                 </div>
-    
+
                 <div class="foto-portada-cont">
                     <label for="foto_portada" class="fotos-label">Sube tu dibujo</label>
                     <input type="file" id="foto_portada" accept="image/*" capture="user" style="display: none;">
                     <div class="foto-portada-background">
                         <label for="foto_portada" class="custom-file-upload" id="imagePreviewPortada"
-                        style="{{ $foto_portada ? 'background-image: url(' . $foto_portada->temporaryUrl() . '); background-size: 75%;' : '' }}">
-                    </label>
+                            style="{{ $foto_portada ? 'background-image: url(' . $foto_portada->temporaryUrl() . '); background-size: 75%;' : '' }}">
+                        </label>
                     </div>
                     @error('foto_portada')
                         <div class="text-invalid-portada">
