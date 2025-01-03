@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v={{ time() }}">
     <title>Regreso al cole</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </head>
 
 <body>
