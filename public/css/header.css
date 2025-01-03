@@ -126,13 +126,14 @@
 
 .floating-menu-item {
     font-family: 'Nunito', sans-serif;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FF36D4;
     height: 80px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 1.2rem;
 }
 
@@ -162,6 +163,12 @@
     font-size: 1.5rem;
     cursor: pointer;
     margin: 20px;
+}
+
+.floating-menu-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /* Laptop media query 1366 x 768 */

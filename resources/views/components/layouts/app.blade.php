@@ -73,6 +73,11 @@
                 @csrf
             </form>
         </div>
+        <div class="floating-menu-image">
+            <img src="{{ asset('assets/hand-floating-menu.png') }}" alt="Hand Floating Menu">
+        </div>
+
+    </div>
     </div>
 
     <main>
