@@ -20,7 +20,7 @@
 
     
 </head>
-
+{{-- TODO: PopUP - Menu mobile - galeria - ganadores - foto chatbot  --}}
 <body>
     @auth
         <header class="main-header">

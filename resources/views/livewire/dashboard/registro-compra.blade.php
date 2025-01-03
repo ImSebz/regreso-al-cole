@@ -11,7 +11,6 @@
             <h1>Regístrate y sé 1 de los 1200 ganadores</h1>
             <img src="{{ asset('assets/logo-bonos-home.png') }}" class="img-logos-bonos" alt="Logos Bonos Home">
             <div class="info-text-cont">
-                {{-- <p>1. Registra tu factura por compra igual o superior a $30.000 en productos de nuestras marcas Paper Mate®, Sharpie®, Prismacolor®.</p> --}}
                 <div class="info-text-cajas">
                     <p>1. Sube tu factura* debe incluir 1 caja de colores <span class="bold-text">Paper Mate®</span> y/o
                         <span class="bold-text">Prismacolor®</span>.</p>
@@ -20,7 +19,6 @@
                 <div class="info-text-dibujo">
                     <p>2. Sube la foto de tu dibujo* hecho a mano.</p>
                 </div>
-                {{-- Look&Feel --}}
 
             </div>
         </div>
