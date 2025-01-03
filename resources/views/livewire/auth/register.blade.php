@@ -27,7 +27,7 @@
                     <div class="text-invalid">{{ $message }}</div>
                 @enderror
                 <label for="cedula" class="registro-label">Cedula</label>
-                <input type="text" id="cedula" wire:model="cedula" placeholder="Número de cedula"
+                <input type="text" id="cedula" wire:model="cedula" placeholder="Número de Cedula"
                     class="registro-input">
                 @error('cedula')
                     <div class="text-invalid">{{ $message }}</div>
@@ -79,14 +79,21 @@
                 @enderror
                 {{-- Ojo para ver contraseña --}}
                 <label for="password" class="registro-label">Contraseña</label>
-                <input type="password" id="password" wire:model="password" placeholder="Contraseña"
-                    class="registro-input">
+                <div class="password-container">
+                    <input type="password" id="password" wire:model="password" placeholder="Contraseña"
+                        class="registro-input">
+                    <i class="fas fa-eye-slash toggle-password" id="togglePassword"></i>
+                </div>
                 @error('password')
                     <div class="text-invalid">{{ $message }}</div>
                 @enderror
+
                 <label for="password_confirmation" class="registro-label">Confirmar Contraseña</label>
-                <input type="password" id="password_confirmation" wire:model="password_confirmation"
-                    placeholder="Confirma Contraseña" class="registro-input">
+                <div class="password-container">
+                    <input type="password" id="password_confirmation" wire:model="password_confirmation"
+                        placeholder="Confirma Contraseña" class="registro-input">
+                    <i class="fas fa-eye-slash toggle-password" id="togglePasswordConfirmation"></i>
+                </div>
 
                 <label for="fecha_nacimiento" class="registro-label">Fecha de Nacimiento</label>
                 <input type="date" id="fecha_nacimiento" wire:model="fecha_nacimiento"
@@ -126,6 +133,27 @@
     </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const togglePassword = document.getElementById('togglePassword');
+            const password = document.getElementById('password');
+            const togglePasswordConfirmation = document.getElementById('togglePasswordConfirmation');
+            const passwordConfirmation = document.getElementById('password_confirmation');
+
+            togglePassword.addEventListener('click', function() {
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+            });
+
+            togglePasswordConfirmation.addEventListener('click', function() {
+                const type = passwordConfirmation.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordConfirmation.setAttribute('type', type);
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+            });
+        });
+
         // Validación de fecha de nacimiento mayor de 18 años
         window.onload = () => {
             const fechaNacimiento = document.getElementById('fecha_nacimiento');

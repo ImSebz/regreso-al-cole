@@ -116,7 +116,7 @@
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 2px 20px 2px 2px;
-    font-family: 'Heyhoo';
+    /* font-family: 'Heyhoo'; */
     font-size: 0.85rem;
     background-color: #fff;
     color: #333;
@@ -189,6 +189,24 @@
     margin-bottom: 5px;
 }
 
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.registro-input {
+    width: 100%;
+    padding-right: 40px; /* Espacio para el icono */
+}
+
+.toggle-password {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
 /* Laptop media query 1366 x 768 */
 @media screen and (max-width: 1366px) {
     .register-img-container img {
@@ -249,6 +267,20 @@
         font-size: 0.5rem;
         margin-top: 0;
         margin-bottom: 2px;
+    }
+
+    .password-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .registro-input {
+        width: 100%;
+        padding-right: 40px; 
+    }
+    
+    .toggle-password {
+        top: 62%;
     }
 }
 
@@ -358,5 +390,19 @@
         font-size: 0.5rem;
         margin-top: 0;
         margin-bottom: 2px;
+    }
+
+    .password-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .registro-input {
+        width: 100%;
+        padding-right: 40px; 
+    }
+    
+    .toggle-password {
+        top: 65%;
     }
 }
