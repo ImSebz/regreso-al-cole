@@ -18,9 +18,10 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Regreso al cole</title>
 
-    
+
 </head>
 {{-- TODO: PopUP - Menu mobile - galeria - ganadores - foto chatbot  --}}
+
 <body>
     @auth
         <header class="main-header">
@@ -56,11 +57,22 @@
 
     <div id="floatingMenu" class="floating-menu">
         <button id="closeMenu" class="close-menu">X</button>
-        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Cerrar
-            sesión</a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            @csrf
-        </form>
+        <div class="floating-menu-item">
+            <a href="{{ route('registro-compra') }}">Registro Compra</a>
+        </div>
+        <div class="floating-menu-item">
+            <a href="{{ route('ganadores') }}">Ganadores</a>
+        </div>
+        <div class="floating-menu-item">
+            <a href="{{ route('galeria') }}">Galería</a>
+        </div>
+        <div class="floating-menu-item">
+            <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Cerrar
+                sesión</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        </div>
     </div>
 
     <main>
