@@ -35,7 +35,8 @@
                             <p class="text-info-content"><span class="bold-text">$30.000</span> o más en productos de nuestras marcas, que incluya 1 caja de colores <span class="bold-text">Paper Mate®</span>  y/o <span class="bold-text">Prismacolor®</span></p>
                         </div>
                         <div class="info-item">
-                            <img src="{{ asset('assets/registro-registrate1.png') }}" alt="Registro 2">
+                            {{-- Envio a pagina de registro --}}
+                            <img src="{{ asset('assets/registro-registrate1.png') }}" id="registro_id" alt="Registro 2">
                             <p class="text-info-content">Pinta el dibujo que quieras y tómale una foto al dibujo, a la factura y a los productos comprados y súbelas.</p>
                         </div>
                         <div class="info-item">
@@ -62,6 +63,13 @@
     </div>
 </body>
 <script>
+
+    const registroImg = document.getElementById('registro_id');
+
+    registroImg.addEventListener('click', () => {
+        window.location.href = "{{ route('register') }}";
+    });
+
     window.addEventListener('mouseover', initLandbot, {
             once: true
         });

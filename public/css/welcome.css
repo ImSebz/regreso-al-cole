@@ -61,6 +61,10 @@
     gap: 20px; /* Espacio entre la imagen y el texto */
 }
 
+#registro_id {
+    cursor: pointer;
+}
+
 .text-info-content {
     font-family: 'Heyhoo';
     font-weight: lighter;
