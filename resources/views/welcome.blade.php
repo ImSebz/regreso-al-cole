@@ -31,21 +31,21 @@
                     <h1 class="welcome-title">¿Cómo participar?</h1>
                     <div class="welcome-info">
                         <div class="info-item">
-                            <img src="{{ asset('assets/registro-compra.png') }}" alt="Registro 1">
+                            <img src="{{ asset('assets/registro-compra1.png') }}" alt="Registro 1">
                             <p class="text-info-content"><span class="bold-text">$30.000</span> o más en productos de nuestras marcas, que incluya 1 caja de colores <span class="bold-text">Paper Mate®</span>  y/o <span class="bold-text">Prismacolor®</span></p>
                         </div>
                         <div class="info-item">
-                            <img src="{{ asset('assets/registro-registrate.png') }}" alt="Registro 2">
+                            <img src="{{ asset('assets/registro-registrate1.png') }}" alt="Registro 2">
                             <p class="text-info-content">Pinta el dibujo que quieras y tómale una foto al dibujo, a la factura y a los productos comprados y súbelas.</p>
                         </div>
                         <div class="info-item">
-                            <img src="{{ asset('assets/registro-participa.png') }}" alt="Registro 3">
+                            <img src="{{ asset('assets/registro-participa1.png') }}" alt="Registro 3">
                             <p class="text-info-content">Sé uno de los primeros <span class="bold-text">150 en participar</span> por semana y prepárate para ganar</p>
                         </div>
                     </div>
                     <div class="welcome-btn-container">
                         <div class="btn-with-image">
-                            <a class="welcome-btn" id="entrar_btn" href="{{ route('login') }}">Entra</a>
+                            <a class="welcome-btn" id="entrar_btn" href="{{ route('login') }}">Entrar</a>
                             <img src="{{ asset('assets/select-img.png') }}" alt="Select Image" class="select-img">
                         </div>
                         <a class="welcome-btn" id="registrar_btn" href="{{ route('register') }}">Registrarme</a>
