@@ -9,7 +9,9 @@
                     <p>1. Sube tu factura* debe incluir 1 caja de colores <span class="bold-text">Paper Mate®</span> y/o <span class="bold-text">Prismacolor®</span>.</p> 
                     <img src="{{ asset('assets/logo-cajas-home.png') }}" class="img-logo-cajas" alt="Logos Cajas Home">
                 </div>
-                <p>2. Sube la foto de tu dibujo* hecho a mano.</p>
+                <div class="info-text-dibujo">
+                    <p>2. Sube la foto de tu dibujo* hecho a mano.</p>
+                </div>
                 {{-- Look&Feel --}}
 
             </div>

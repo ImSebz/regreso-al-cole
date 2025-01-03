@@ -52,6 +52,13 @@
     margin-bottom: 20px;
 }
 
+.info-text-dibujo {
+    width: 100%;
+    font-family: 'Heyhoo';
+    display: flex;
+    justify-content: left;
+}
+
 .img-logos-bonos{
     width: 90%;
 }
@@ -63,7 +70,7 @@
 
 .info-text-cont {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
     width: 100%;
     font-family: 'Heyhoo';
@@ -219,8 +226,6 @@
     
     .img-logo-cajas{
         margin-top: 10px;
-        width: 70%;
-        max-width: 250px;
     }
 
 
