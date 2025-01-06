@@ -77,6 +77,14 @@
                 @error('celular')
                     <div class="text-invalid">{{ $message }}</div>
                 @enderror
+
+                <label for="fecha_nacimiento" class="registro-label">Fecha de Nacimiento</label>
+                <input type="date" id="fecha_nacimiento" wire:model="fecha_nacimiento"
+                    placeholder="Fecha de Nacimiento" class="registro-input">
+                @error('fecha_nacimiento')
+                    <div class="text-invalid">{{ $message }}</div>
+                @enderror
+
                 <label for="password" class="registro-label">Contraseña</label>
                 <div class="password-container">
                     <input type="password" id="password" wire:model="password" placeholder="Contraseña"
@@ -93,13 +101,6 @@
                         placeholder="Confirma Contraseña" class="registro-input">
                     <i class="fas fa-eye-slash toggle-password" id="togglePasswordConfirmation"></i>
                 </div>
-
-                <label for="fecha_nacimiento" class="registro-label">Fecha de Nacimiento</label>
-                <input type="date" id="fecha_nacimiento" wire:model="fecha_nacimiento"
-                    placeholder="Fecha de Nacimiento" class="registro-input">
-                @error('fecha_nacimiento')
-                    <div class="text-invalid">{{ $message }}</div>
-                @enderror
 
                 <div class="checks-container">
                     <div class="check-item">
