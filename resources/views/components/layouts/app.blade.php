@@ -57,13 +57,14 @@
 
     <div id="floatingMenu" class="floating-menu">
         <button id="closeMenu" class="close-menu">X</button>
-        <div class="floating-menu-item">
+
+        <div class="floating-menu-item" id="floating_mobile">
             <a href="{{ route('registro-compra') }}">Registro Compra</a>
         </div>
-        <div class="floating-menu-item">
+        <div class="floating-menu-item" id="floating_mobile">
             <a href="{{ route('ganadores') }}">Ganadores</a>
         </div>
-        <div class="floating-menu-item">
+        <div class="floating-menu-item" id="floating_mobile">
             <a href="{{ route('galeria') }}">Galería</a>
         </div>
         <div class="floating-menu-item">

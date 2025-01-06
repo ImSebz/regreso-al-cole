@@ -135,6 +135,7 @@
     width: 100%;
     margin-bottom: 10px;
     font-size: 1.2rem;
+    z-index: 1000;
 }
 
 .floating-menu-item a {
@@ -145,6 +146,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#floating_mobile {
+    display: none;
 }
 
 .floating-menu.show {
@@ -231,5 +236,9 @@
 
     .header-sub-logos img {
         width: 5%;
+    }
+
+    #floating_mobile {
+        display: block;
     }
 }
