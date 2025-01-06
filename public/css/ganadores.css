@@ -19,3 +19,26 @@
     background-position: center;
     background-size: cover;
 }
+
+.ganadores-container h1 {
+    font-family: 'Sweet-Chocolate';
+    font-size: 6rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+/* Laptop media query */
+
+@media screen and (max-width: 1366px) {
+    .ganadores-container h1 {
+        font-size: 4rem;
+    }
+}
+
+/* Mobile media query */
+
+@media screen and (max-width: 768px) {
+    .ganadores-container h1 {
+        font-size: 3rem;
+    }
+}
