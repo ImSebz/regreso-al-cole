@@ -1,0 +1,15 @@
+.swal2-popup {
+    font-family: 'Heyhoo', sans-serif;
+    background-color: #F9F96F !important;
+    color: #000 !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #FF36D4 !important;
+    color: #000 !important;
+    font-family: 'Heyhoo', sans-serif;
+}
+
+div:where(.swal2-icon).swal2-success {
+    display: none !important;
+}
