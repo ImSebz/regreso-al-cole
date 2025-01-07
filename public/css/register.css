@@ -70,8 +70,7 @@
 
 .register-text-logo img {
     display: relative;
-    margin-left: -500px;
-    width: 150%;
+    width: 130%;
 }
 
 .register-bot-logo {
@@ -252,8 +251,7 @@
     }
 
     .register-text-logo img {
-        width: 150%;
-        margin-left: -300px;
+        width: 125%;
     }
     
 
