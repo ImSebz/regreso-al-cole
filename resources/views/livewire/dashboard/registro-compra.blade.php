@@ -12,7 +12,7 @@
             <img src="{{ asset('assets/logo-bonos-home.png') }}" class="img-logos-bonos" alt="Logos Bonos Home">
             <div class="info-text-cont">
                 <div class="info-text-cajas">
-                    <p>1. Sube tu factura* debe incluir 1 caja de colores <span class="bold-text">Paper Mate®</span> y/o
+                    <p>1. Sube tu factura* debe incluir  <span class="bold-text"> 1 caja de colores Paper Mate®</span> y/o
                         <span class="bold-text">Prismacolor®</span>.</p>
                     <img src="{{ asset('assets/logo-cajas-home.png') }}" class="img-logo-cajas" alt="Logos Cajas Home">
                 </div>

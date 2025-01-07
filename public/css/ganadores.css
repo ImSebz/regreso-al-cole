@@ -21,8 +21,8 @@
 }
 
 .ganadores-container h1 {
-    font-family: 'Sweet-Chocolate';
-    font-size: 6rem;
+    font-family: 'Heyhoo';
+    font-size: 3rem;
     text-align: center;
     font-weight: lighter;
 }
@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 1366px) {
     .ganadores-container h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -39,6 +39,6 @@
 
 @media screen and (max-width: 768px) {
     .ganadores-container h1 {
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
 }

@@ -33,7 +33,7 @@
                         <div class="info-item">
                             <img src="{{ asset('assets/registro-compra1.png') }}" alt="Registro 1">
                             <p class="text-info-content"><span class="bold-text">$30.000</span> o más en productos de
-                                nuestras marcas, que incluya 1 caja de colores <span class="bold-text">Paper
+                                nuestras marcas, que incluya<span class="bold-text"> 1 caja de colores Paper
                                     Mate®</span> y/o <span class="bold-text">Prismacolor®</span></p>
                         </div>
                         <div class="info-item">
@@ -54,11 +54,10 @@
                                 <img src="{{ asset('assets/registro-compra1.png') }}" alt="Registro 1">
                                 <p class="text-info-content-mobile"><span class="bold-text">$30.000</span> o más en
                                     productos de
-                                    nuestras marcas, que incluya 1 caja de colores <span class="bold-text">Paper
+                                    nuestras marcas, que incluya <span class="bold-text"> 1 caja de colores Paper
                                         Mate®</span> y/o <span class="bold-text">Prismacolor®</span></p>
                             </div>
                             <div class="info-item-mobile-img">
-                                {{-- TODO: Cambiar imagen --}}
                                 <img src="{{ asset('assets/colores-info.png') }}" alt="">
                             </div>
                         </div>
@@ -94,7 +93,7 @@
                     </div>
                 </div>
                 <div class="welcome-premios-img">
-                    <img src="{{ asset('assets/premios-home-dekstop-v1.png') }}" alt="">
+                    <img src="{{ asset('assets/premios-home-dekstop.png') }}" alt="">
                 </div>
             </div>
             <div class="welcome-legales">

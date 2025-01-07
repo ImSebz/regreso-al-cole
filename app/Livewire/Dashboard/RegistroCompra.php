@@ -40,7 +40,7 @@ class RegistroCompra extends Component
 
         $this->resetFields();
         return redirect()->route('galeria')->with([
-            'title' => '¡Gracias por tu registro!.',
+            'title' => '¡Gracias por tu registro!',
             'compra-success' => 'Nos encontramos validando tu factura de compra y tu dibujo, nos contactaremos en breve (Máximo 2 días hábiles).'
         ]);      
     }

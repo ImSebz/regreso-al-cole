@@ -10,6 +10,11 @@
     font-family: 'Heyhoo', sans-serif;
 }
 
+.swal2-html-container {
+    font-family: 'CrosstenSoft Extralight', sans-serif;
+    color: #000 !important;
+}
+
 div:where(.swal2-icon).swal2-success {
     display: none !important;
 }
