@@ -39,7 +39,7 @@
                     <img src="{{ asset('assets/sharpie-logo.png') }}" alt="Sharpie Logo">
                     <img src="{{ asset('assets/papermate-logo.png') }}" alt="Papermate Logo">
                     <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="Prismacolor Logo">
-                    <img src="{{ asset('assets/kilometrico-logo.png') }}" alt="Kilometrico Logo">
+                    <img src="{{ asset('assets/kilometrico-logo1.png') }}" alt="Kilometrico Logo">
 
                 </div>
             </div>
@@ -105,10 +105,10 @@
                 theme: "classic",
                 position: "bottom",
                 content: {
-                    message: "Usamos cookies para mejorar tu experiencia en el sitio.",
+                    message: "Este sitio web utiliza tecnologías como cookies para habilitar la funcionalidad esencial del sitio, así como para analítica, personalización y publicidad dirigida. Para obtener más información, consulte el siguiente enlace: Política de cookies",
                     dismiss: "Aceptar",
                     link: "Leer más",
-                    href: "/"
+                    href: "https://privacy.newellbrands.com/cookie-policy/index"
                 }
             });
         });

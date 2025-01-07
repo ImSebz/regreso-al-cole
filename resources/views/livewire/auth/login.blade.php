@@ -42,7 +42,7 @@
             <img src="{{ asset('assets/sharpie-logo.png') }}" alt="Sharpie Logo">
             <img src="{{ asset('assets/papermate-logo.png') }}" alt="Papermate Logo">
             <img src="{{ asset('assets/prismacolor-logo.png') }}" alt="Prismacolor Logo">
-            <img src="{{ asset('assets/kilometrico-logo.png') }}" alt="Kilometrico Logo">
+            <img src="{{ asset('assets/kilometrico-logo1.png') }}" alt="Kilometrico Logo">
         </div>
         <div class="sharpie-logo-img">
             <img src="{{ asset('assets/sharpie-asset.png') }}" alt="Sharpie Logo">
