@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    z-index: 100;
 }
 
 .login-box label {
@@ -181,6 +182,10 @@
 
 @media screen and (max-width: 1366px) {
 
+    .login-container {
+        height: 100%;
+    }
+
     .login-img-container {
         margin-bottom: 20px;
     }
@@ -239,6 +244,11 @@
 
 /* Mobile media query */
 @media screen and (max-width: 768px) {
+
+    .login-container {
+        height: 100dvh;
+    }
+
 
     .login-box {
         padding: 15px;
