@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="{{ asset('css/popup.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Regreso al cole</title>
 
 
@@ -87,6 +90,30 @@
     </main>
 
     <script>
+        window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: {
+                        background: "#333333",
+                        text: "#ffffff"
+                    },
+                    button: {
+                        background: "#28a745",
+                        text: "#ffffff"
+                    }
+                },
+                theme: "classic",
+                position: "bottom",
+                content: {
+                    message: "Usamos cookies para mejorar tu experiencia en el sitio.",
+                    dismiss: "Aceptar",
+                    link: "Leer más",
+                    href: "/"
+                }
+            });
+        });
+
+
         document.getElementById('headerUser').addEventListener('click', function() {
             const menu = document.getElementById('floatingMenu');
             menu.classList.toggle('show');

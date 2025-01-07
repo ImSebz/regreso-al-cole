@@ -8,6 +8,8 @@
     <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script>
     <title>Regreso al Cole</title>
 </head>
 
@@ -40,10 +42,11 @@
                             {{-- Envio a pagina de registro --}}
                             <img src="{{ asset('assets/registro-registrate1.png') }}" id="registro_id"
                                 alt="Registro 2">
-                            <p class="text-info-content" id="text_info_second">Pinta el dibujo que quieras y tómale una foto al dibujo, a la
+                            <p class="text-info-content" id="text_info_second">Pinta el dibujo que quieras y tómale una
+                                foto al dibujo, a la
                                 factura y a los productos comprados y súbelas.</p>
                         </div>
-                        <div class="info-item">  
+                        <div class="info-item">
                             <img src="{{ asset('assets/registro-participa1.png') }}" alt="Registro 3">
                             <p class="text-info-content">Sé uno de los primeros <span class="bold-text">150 en
                                     participar</span> por semana y prepárate para ganar</p>
@@ -111,6 +114,29 @@
     </div>
 </body>
 <script>
+    window.addEventListener("load", function() {
+        window.cookieconsent.initialise({
+            palette: {
+                popup: {
+                    background: "#333333",
+                    text: "#ffffff"
+                },
+                button: {
+                    background: "#28a745",
+                    text: "#ffffff"
+                }
+            },
+            theme: "classic",
+            position: "bottom",
+            content: {
+                message: "Usamos cookies para mejorar tu experiencia en el sitio.",
+                dismiss: "Aceptar",
+                link: "Leer más",
+                href: "/"
+            }
+        });
+    });
+
     const registroImg = document.getElementById('registro_id');
 
     registroImg.addEventListener('click', () => {
