@@ -59,7 +59,7 @@
                             </div>
                             <div class="info-item-mobile-img">
                                 {{-- TODO: Cambiar imagen --}}
-                                <img src="{{ asset('assets/bonos-info.png') }}" alt="">
+                                <img src="{{ asset('assets/colores-info.png') }}" alt="">
                             </div>
                         </div>
                         <div class="info-item-mobile" id="text_info_second_mobile">
