@@ -9,7 +9,7 @@
                 <p>Para poder registrarte y participar debes ser mayor de 18 años.</p>
             </div>
             <div class="register-text-logo">
-                <img src="{{ asset('assets/colores-logo.png') }}" alt="Colores logos">
+                <img src="{{ asset('assets/colores-logo1.png') }}" alt="Colores logos">
             </div>
             <div class="register-bot-logo">
                 <img src="{{ asset('assets/sharpie-logo.png') }}" alt="Sharpie Logo">
