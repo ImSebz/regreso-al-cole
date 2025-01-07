@@ -155,8 +155,9 @@
 
 .text-invalid-factura, .text-invalid-portada {
     color: red;
-    font-size: 14px;
     margin-top: 5px;
+    font-family: 'Heyhoo';
+    font-size: 1.1rem;
 }
 
 .registrar-compra-btn {
@@ -270,7 +271,7 @@
     }
 
     .text-invalid-factura, .text-invalid-portada {
-        font-size: 10px;
+        font-size: 0.9rem;
     }
 
     .registrar-compra-btn {
