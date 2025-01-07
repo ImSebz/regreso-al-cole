@@ -50,7 +50,9 @@
                     class="{{ request()->routeIs('ganadores') ? 'active' : '' }}">Ganadores</a>
                 <a href="{{ route('galeria') }}" class="{{ request()->routeIs('galeria') ? 'active' : '' }}">Galería</a>
                 <div class="header-user" id="headerUser">
-                    {{ Auth::user()->name }}
+                    <p>
+                        {{ Auth::user()->name }}
+                    </p>
                     <img src="{{ asset('assets/arrow-down.png') }}" alt="Arrow Down" class="arrow-down">
                 </div>
             </div>
