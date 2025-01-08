@@ -26,9 +26,9 @@ class Ganadores extends Component
         3. ['2025-01-06', '2025-01-12']
         4. ['2025-01-13', '2025-01-19']
     */
-    $this->ganadores = RegistroFactura::select('id', 'user_id', 'created_at')
+    $this->ganadores = RegistroFactura::select('id', 'user_id')
         ->where('estado_id', 1)
-        ->whereBetween('created_at', ['2000-08-05', '2000-08-05'])
+        ->whereBetween('created_at', ['2024-12-29', '2025-01-12'])
         ->orderBy('created_at', 'asc')
         ->get();
     }

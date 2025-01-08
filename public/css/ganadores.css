@@ -20,25 +20,69 @@
     background-size: cover;
 }
 
-.ganadores-container h1 {
-    font-family: 'Heyhoo';
+.ganadores-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.ganadores-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.ganador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.ganador-number {
+    font-family: 'Sweet-Chocolate';
+    color: #FF6700;
     font-size: 3rem;
     text-align: center;
     font-weight: lighter;
 }
 
-/* Laptop media query */
+.ganador-name {
+    background-color: #fff;
+    font-family: 'Sweet-Chocolate';
+    font-weight: lighter;
+    font-size: 2.3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    width: 67%;
+    text-align: center;
+}
 
+/* Laptop media query */
 @media screen and (max-width: 1366px) {
-    .ganadores-container h1 {
-        font-size: 2.5rem;
+    .ganadores-table-container {
+        flex-direction: column;
+    }
+
+    .ganadores-column {
+        width: 100%;
     }
 }
 
 /* Mobile media query */
-
 @media screen and (max-width: 768px) {
-    .ganadores-container h1 {
-        font-size: 1.8rem;
+    .ganador-number {
+        font-size: 2.5rem;
+    }
+
+    .ganador-name {
+        font-size: 1.5rem;
     }
 }
