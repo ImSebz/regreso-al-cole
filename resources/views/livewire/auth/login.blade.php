@@ -22,7 +22,7 @@
                     @enderror
                 </div>
                 <div class="login-remember">
-                    <p>¿Olvidaste tu contraseña?</p>
+                    <a href="/forgot-password"><p>¿Olvidaste tu contraseña?</p></a>
                     <div class="login-remember-checkbox">
                         <input type="checkbox" id="remember">
                         <label for="remember">Recuérdame</label>

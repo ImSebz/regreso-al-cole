@@ -43,3 +43,5 @@ Route::middleware(['auth'])->middleware(['tutor'])->group(function () {
     Route::get('/galeria', Galeria::class)->name('galeria');
     Route::get('/ganadores', Ganadores::class)->name('ganadores');
 });
+
+require __DIR__.'/auth.php';

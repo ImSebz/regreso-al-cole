@@ -121,7 +121,18 @@
     font-family: 'Heyhoo';
     font-size: 1.2rem;
     color: #fff;
+    transition: all 0.3s ease; 
 }
+
+
+.login-remember p:hover {
+    color: #FF6700;
+}
+
+.login-remember a {
+    text-decoration: none;
+}
+
 
 .login-remember-checkbox {
     display: flex;
