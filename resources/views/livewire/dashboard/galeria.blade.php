@@ -20,6 +20,8 @@
                 icon: 'success',
                 confirmButtonText: 'Aceptar'
             });
+
+            
         </script>
     @endif
 @endscript

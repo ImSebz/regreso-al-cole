@@ -166,6 +166,8 @@
                         <td>Nombre</td>
                         <td>Número de factura</td>
                         <td>Correo</td>
+                        <td>Foto de factura</td>
+                        <td>Foto de portada</td>
                         <td>Celular</td>
                         <td>Cédula</td>
                         <td>Ciudad</td>
@@ -180,6 +182,18 @@
                             <td>{{ $RegistroFactura->user->name }}</td>
                             <td> {{ $RegistroFactura->num_factura ?? 'N/A' }}</td>
                             <td>{{ $RegistroFactura->user->email }}</td>
+                            <td>
+                                <a href="{{ asset('storage/' . str_replace('public/', '', $RegistroFactura->foto_factura)) }}"
+                                    target="_blank">
+                                    {{ \Illuminate\Support\Str::limit($RegistroFactura->foto_factura, 20) }}
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{{ asset('storage/' . str_replace('public/', '', $RegistroFactura->foto_portada)) }}"
+                                    target="_blank">
+                                    {{ \Illuminate\Support\Str::limit($RegistroFactura->foto_portada, 20) }}
+                                </a>
+                            </td>
                             <td>{{ $RegistroFactura->user->celular }}</td>
                             <td>{{ $RegistroFactura->user->cedula }}</td>
                             <td>{{ $RegistroFactura->user->ciudad->descripcion }}</td>
