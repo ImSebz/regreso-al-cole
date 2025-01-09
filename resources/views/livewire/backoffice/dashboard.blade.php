@@ -37,6 +37,10 @@
                                 <span class="fw-bold">Fecha:</span>
                                 {{ $RegistroFactura->created_at }}
                             </div>
+                            <div class="col-4">
+                                <span class="fw-bold">Ciudad:</span>
+                                {{ $RegistroFactura->user->ciudad->descripcion }}
+                            </div>
                         </div>
                     </div>
                     <div class="card-body">
