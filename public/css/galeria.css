@@ -42,6 +42,7 @@
 
 .galeria-item {
     width: 30%;
+    min-width: 350px;
     box-sizing: border-box;
     background-color: #F9F96F;
     padding: 20px;
@@ -60,7 +61,8 @@
 @media screen and (max-width: 1366px) {
     .galeria-container h1 {
         font-size: 1.7rem;
-        margin-top: 15%;
+        margin-top: 20%;
+        min-width: 300px;
         width: 40%;
     }
     
