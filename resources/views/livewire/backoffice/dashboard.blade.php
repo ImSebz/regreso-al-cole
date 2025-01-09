@@ -189,13 +189,13 @@
                                 <td>
                                     <a href="{{ asset('storage/' . str_replace('public/', '', $RegistroFactura->foto_factura)) }}"
                                         target="_blank">
-                                        {{ \Illuminate\Support\Str::limit($RegistroFactura->foto_factura, 20) }}
+                                        {{ \Illuminate\Support\Str::limit($RegistroFactura->foto_factura, 10) }}
                                     </a>
                                 </td>
                                 <td>
                                     <a href="{{ asset('storage/' . str_replace('public/', '', $RegistroFactura->foto_portada)) }}"
                                         target="_blank">
-                                        {{ \Illuminate\Support\Str::limit($RegistroFactura->foto_portada, 20) }}
+                                        {{ \Illuminate\Support\Str::limit($RegistroFactura->foto_portada, 10) }}
                                     </a>
                                 </td>
                                 <td>{{ $RegistroFactura->user->celular }}</td>
