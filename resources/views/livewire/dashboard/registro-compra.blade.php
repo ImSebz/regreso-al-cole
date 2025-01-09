@@ -26,7 +26,7 @@
             <div class="fotos-cont">
                 <div class="foto-factura-cont">
                     <label for="foto_factura" class="fotos-label">Sube tu factura</label>
-                    <input type="file" id="foto_factura" accept="image/*" capture="user" style="display: none;">
+                    <input type="file" id="foto_factura" accept="image/*" style="display: none;">
                     <div class="foto-factura-background">
                         <label for="foto_factura" class="custom-file-upload" id="imagePreviewFactura"
                             style="{{ $foto_factura ? 'background-image: url(' . $foto_factura->temporaryUrl() . '); background-size: 75%;' : '' }}">
@@ -45,7 +45,7 @@
 
                 <div class="foto-portada-cont">
                     <label for="foto_portada" class="fotos-label">Sube tu dibujo</label>
-                    <input type="file" id="foto_portada" accept="image/*" capture="user" style="display: none;">
+                    <input type="file" id="foto_portada" accept="image/*" style="display: none;">
                     <div class="foto-portada-background">
                         <label for="foto_portada" class="custom-file-upload" id="imagePreviewPortada"
                             style="{{ $foto_portada ? 'background-image: url(' . $foto_portada->temporaryUrl() . '); background-size: 75%;' : '' }}">
