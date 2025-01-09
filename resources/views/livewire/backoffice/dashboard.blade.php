@@ -1,9 +1,9 @@
 <div class="container my-5">
-    @session('success')
+    @if (session('success'))
         <div class="alert alert-primary" role="alert">
             {{ session('success') }}
         </div>
-    @endsession
+    @endif
     <div class="d-flex justify-content-end mb-3">
         <a href="#" class="btn btn-danger"
             onclick="event.preventDefault(); if(confirm('¿Estás seguro de que deseas cerrar sesión?')) { document.getElementById('logout-form').submit(); }">Cerrar
@@ -147,6 +147,62 @@
             @endforeach
             <div class="card-body">
                 {{ $RegistrosFactura->links() }}
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-5">
+        <div class="card-header">
+            <h5>Todos los registros de factura</h5>
+        </div>
+        <div class="card-body">
+            {{-- <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Buscar por cédula" wire:model="search">
+            </div> --}}
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Número de factura</td>
+                        <td>Correo</td>
+                        <td>Celular</td>
+                        <td>Cédula</td>
+                        <td>Ciudad</td>
+                        <td>Estado</td>
+                        <td>Observaciones</td>
+                        <td>Fecha</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($RegistroFacturaComplete as $RegistroFactura)
+                        <tr>
+                            <td>{{ $RegistroFactura->user->name }}</td>
+                            <td> {{ $RegistroFactura->num_factura ?? 'N/A' }}</td>
+                            <td>{{ $RegistroFactura->user->email }}</td>
+                            <td>{{ $RegistroFactura->user->celular }}</td>
+                            <td>{{ $RegistroFactura->user->cedula }}</td>
+                            <td>{{ $RegistroFactura->user->ciudad->descripcion }}</td>
+                            <td>
+                                @if ($RegistroFactura->estado_id == 1)
+                                    Aprobado
+                                @elseif ($RegistroFactura->estado_id == 4)
+                                    Rechazado
+                                @elseif ($RegistroFactura->estado_id == 2)
+                                    En revisión
+                                @else
+                                    Desconocido
+                                @endif
+                            </td>
+                            <td>{{ $RegistroFactura->observaciones ?? 'N/A' }}</td>
+                            <td>{{ $RegistroFactura->created_at }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+
+            <div>
+                {{ $RegistroFacturaComplete->links() }}
             </div>
         </div>
     </div>

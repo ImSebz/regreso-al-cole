@@ -14,11 +14,27 @@ class Dashboard extends Component
 
     // Models
     public $RegistroFactura, $num_factura, $aprobacion_portada, $observaciones;
+    public $search = '';
+    public $searchTerm = '';
 
     public function render()
     {
         $RegistrosFactura = RegistroFactura::where('estado_id', 2)->paginate(9);
-        return view('livewire.backoffice.dashboard', ['RegistrosFactura' => $RegistrosFactura]);
+        $RegistroFacturaComplete = RegistroFactura::when($this->searchTerm, function($query) {
+            $query->whereHas('user', function($q) {
+                $q->where('cedula', 'like', '%' . $this->searchTerm . '%');
+            });
+        })->paginate(9);
+
+        return view('livewire.backoffice.dashboard', [
+            'RegistrosFactura' => $RegistrosFactura,
+            'RegistroFacturaComplete' => $RegistroFacturaComplete
+        ]);
+    }
+
+    public function search()
+    {
+        $this->searchTerm = $this->search;
     }
 
     public function getRegistro($registro_id)
