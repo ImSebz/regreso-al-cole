@@ -165,6 +165,7 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
+                            <td>#</td>
                             <td>Nombre</td>
                             <td>Número de factura</td>
                             <td>Correo</td>
@@ -181,6 +182,7 @@
                     <tbody>
                         @foreach ($RegistroFacturaComplete as $RegistroFactura)
                             <tr>
+                                <td>{{ $RegistroFactura->id }}</td>
                                 <td>{{ $RegistroFactura->user->name }}</td>
                                 <td>{{ $RegistroFactura->num_factura ?? 'N/A' }}</td>
                                 <td>{{ $RegistroFactura->user->email }}</td>
