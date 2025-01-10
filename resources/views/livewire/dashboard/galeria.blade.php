@@ -1,6 +1,6 @@
 <div class="main-galeria-container">
     <div class="galeria-container">
-        <h1>Ya compartiste tu arte, ahora descubre  las creaciones de los demás</h1>
+        <h1>Ya compartiste tu arte, ahora descubre las creaciones de los demás</h1>
         <div class="galeria">
             @foreach ($fotosPortada as $foto)
                 <div class="galeria-item">
@@ -18,10 +18,14 @@
                 title: '{{ session('title') }}',
                 text: '{{ session('compra-success') }}',
                 icon: 'success',
-                confirmButtonText: 'Aceptar'
+                confirmButtonText: 'Aceptar',
+                customClass: {
+                    container: 'custom-swal-container'
+                },
+                didOpen: () => {
+                    document.querySelector('.custom-swal-container').id = 'compra_success_id';
+                }
             });
-
-            
         </script>
     @endif
 @endscript

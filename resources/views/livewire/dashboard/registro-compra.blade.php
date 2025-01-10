@@ -12,8 +12,10 @@
             <img src="{{ asset('assets/logo-bonos-home.png') }}" class="img-logos-bonos" alt="Logos Bonos Home">
             <div class="info-text-cont">
                 <div class="info-text-cajas">
-                    <p>1. Sube tu factura* debe incluir  <span class="bold-text"> 1 caja de colores Paper Mate®</span> y/o
-                        <span class="bold-text">Prismacolor®</span>.</p>
+                    <p>1. Sube tu factura* debe incluir <span class="bold-text"> 1 caja de colores Paper Mate®</span>
+                        y/o
+                        <span class="bold-text">Prismacolor®</span>.
+                    </p>
                     <img src="{{ asset('assets/logo-cajas-home.png') }}" class="img-logo-cajas" alt="Logos Cajas Home">
                 </div>
                 <div class="info-text-dibujo">
@@ -26,7 +28,8 @@
             <div class="fotos-cont">
                 <div class="foto-factura-cont">
                     <label for="foto_factura" class="fotos-label">Sube tu factura</label>
-                    <input type="file" id="foto_factura" accept="image/*" capture="environment" style="display: none;">
+                    <input type="file" id="foto_factura" accept="image/*" capture="environment"
+                        style="display: none;">
                     <div class="foto-factura-background">
                         <label for="foto_factura" class="custom-file-upload" id="imagePreviewFactura"
                             style="{{ $foto_factura ? 'background-image: url(' . $foto_factura->temporaryUrl() . '); background-size: 75%;' : '' }}">
@@ -45,7 +48,8 @@
 
                 <div class="foto-portada-cont">
                     <label for="foto_portada" class="fotos-label">Sube tu dibujo</label>
-                    <input type="file" id="foto_portada" accept="image/*" capture="environment" style="display: none;">
+                    <input type="file" id="foto_portada" accept="image/*" capture="environment"
+                        style="display: none;">
                     <div class="foto-portada-background">
                         <label for="foto_portada" class="custom-file-upload" id="imagePreviewPortada"
                             style="{{ $foto_portada ? 'background-image: url(' . $foto_portada->temporaryUrl() . '); background-size: 75%;' : '' }}">
@@ -73,7 +77,13 @@
                         title: '{{ session('title') }}',
                         text: '{{ session('register-success') }}',
                         icon: 'success',
-                        confirmButtonText: 'Aceptar'
+                        confirmButtonText: 'Aceptar',
+                        customClass: {
+                            container: 'custom-swal-container'
+                        },
+                        didOpen: () => {
+                            document.querySelector('.custom-swal-container').id = 'register_success_id';
+                        }
                     });
                 </script>
             @endif
