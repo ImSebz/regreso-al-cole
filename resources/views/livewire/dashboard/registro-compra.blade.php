@@ -35,6 +35,7 @@
                             style="{{ $foto_factura ? 'background-image: url(' . $foto_factura->temporaryUrl() . '); background-size: 75%;' : '' }}">
                         </label>
                     </div>
+                    <p class="disclaimer-text">Recuerda que la factura se debe ver completa*</p>
 
                     @error('foto_factura')
                         <div class="text-invalid-factura">
@@ -55,6 +56,7 @@
                             style="{{ $foto_portada ? 'background-image: url(' . $foto_portada->temporaryUrl() . '); background-size: 75%;' : '' }}">
                         </label>
                     </div>
+                    <p class="disclaimer-text">Recuerda que el dibujo debe incluir nuestros productos*</p>
                     @error('foto_portada')
                         <div class="text-invalid-portada">
                             {{ $message }}

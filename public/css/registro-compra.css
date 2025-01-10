@@ -132,6 +132,12 @@
     background-color: #1542E5;
 }
 
+.disclaimer-text {
+    margin-top: 5px;
+    font-family: 'Heyhoo';
+    font-size: 1rem;
+}
+
 .custom-file-upload {
     display: block;
     width: 100%;
