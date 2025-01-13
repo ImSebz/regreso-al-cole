@@ -91,10 +91,10 @@
             @endif
 
             <script>
-                const MAX_WIDTH = 1020;
-                const MAX_HEIGHT = 980;
+                const MAX_WIDTH = 1920;
+                const MAX_HEIGHT = 1080;
                 const MIME_TYPE = "image/jpeg";
-                const QUALITY = 0.9;
+                const QUALITY = 1;
 
                 const foto_factura = document.getElementById("foto_factura");
                 const foto_portada = document.getElementById("foto_portada");
