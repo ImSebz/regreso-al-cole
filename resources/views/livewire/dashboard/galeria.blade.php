@@ -1,4 +1,3 @@
-<!-- filepath: /c:/laragon/www/regreso-al-cole/resources/views/livewire/dashboard/galeria.blade.php -->
 <div class="main-galeria-container">
     <div class="galeria-container">
         <h1>Ya compartiste tu arte, ahora descubre las creaciones de los demás</h1>
@@ -43,6 +42,17 @@
             items.forEach((item, index) => {
                 item.style.display = (index >= start && index < end) ? 'block' : 'none';
             });
+
+            // Actualizar la clase activa en los enlaces de paginación
+            const links = paginationLinks.getElementsByTagName('a');
+            if (links.length > 0) {
+                Array.from(links).forEach(link => {
+                    link.classList.remove('active');
+                });
+                if (links[page - 1]) {
+                    links[page - 1].classList.add('active');
+                }
+            }
         }
 
         function createPagination() {
@@ -58,9 +68,13 @@
                 });
                 paginationLinks.appendChild(link);
             }
+            // Marcar la primera página como activa inicialmente
+            if (paginationLinks.getElementsByTagName('a').length > 0) {
+                paginationLinks.getElementsByTagName('a')[0].classList.add('active');
+            }
         }
 
-        showPage(1);
         createPagination();
+        showPage(1);
     });
 </script>

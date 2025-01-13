@@ -1,3 +1,4 @@
+<!-- filepath: /c:/laragon/www/regreso-al-cole/resources/views/livewire/dashboard/ganadores.blade.php -->
 <div class="main-ganadores-container">
     <div class="ganadores-container">
         <h1>Semana 1</h1>
@@ -7,6 +8,7 @@
         <div class="pagination-links-ganadores" id="pagination-links-ganadores"></div>
     </div>
 </div>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const itemsPerPage = 10; // Máximo 10 elementos por página
@@ -48,6 +50,15 @@
 
             ganadoresContainer.appendChild(column1);
             ganadoresContainer.appendChild(column2);
+
+            // Actualizar la clase activa en los enlaces de paginación
+            const links = paginationLinks.getElementsByTagName('a');
+            Array.from(links).forEach(link => {
+                link.classList.remove('active');
+            });
+            if (links[page - 1]) {
+                links[page - 1].classList.add('active');
+            }
         }
 
         function createPagination() {
@@ -63,10 +74,13 @@
                 });
                 paginationLinks.appendChild(link);
             }
+            // Marcar la primera página como activa inicialmente
+            if (paginationLinks.getElementsByTagName('a').length > 0) {
+                paginationLinks.getElementsByTagName('a')[0].classList.add('active');
+            }
         }
 
-        showPage(1);
         createPagination();
+        showPage(1);
     });
 </script>
-{{-- TODO: Vista ganadores --}}

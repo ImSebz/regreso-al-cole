@@ -64,11 +64,17 @@
 .pagination-links a {
     color: #B5579E;
     text-decoration: none;
+    font-family: 'Heyhoo';
     font-size: 1.7rem;
     padding: 5px 10px;
-    border: 1px solid #B5579E;
     border-radius: 5px;
     margin: 0 5px;
+}
+
+.pagination-links a.active {
+    background-color: #B5579E;
+    color: white;
+    border-bottom: 2px #B5579E solid;
 }
 
 .pagination-links a:hover {

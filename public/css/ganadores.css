@@ -98,6 +98,12 @@
     background-color: #f0f0f0;
 }
 
+.pagination-links-ganadores a.active {
+    background-color: #B5579E;
+    color: white;
+    border-color: #B5579E;
+}
+
 /* Laptop media query */
 @media screen and (max-width: 1366px) {
 
