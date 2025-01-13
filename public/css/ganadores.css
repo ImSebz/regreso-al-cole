@@ -37,7 +37,7 @@
     flex-direction: row;
     width: 100%;
     height: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 20px;
 }
 
@@ -102,17 +102,41 @@
 @media screen and (max-width: 1366px) {
 
     .ganadores-container h1 {
-        font-size: 2rem;
-        margin-top: 12%;
-        margin-bottom: -100px;
-        width: 33%;
-        text-align: center;
-        font-weight: lighter;
+        margin-top: 150px;
     }
+
 }
 
 /* Mobile media query */
 @media screen and (max-width: 768px) {
+
+    .main-ganadores-container {
+        height: 100%;
+    }
+
+    .ganadores-container h1 {
+        font-size: 1.5rem;
+        margin-top: 12%;
+        margin-bottom: 0;
+        margin-top: 260px;
+        width: 33%;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    .ganadores-container {
+        height: 100%;
+    }
+
+    .ganadores-table-container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .ganadores-column {
+        width: 100%;
+    }
+
     .ganador-number {
         font-size: 2.5rem;
     }
