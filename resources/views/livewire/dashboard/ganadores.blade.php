@@ -1,5 +1,6 @@
 <div class="main-ganadores-container">
     <div class="ganadores-container">
+        <h1>Semana 1</h1>
         <div class="ganadores-table-container" id="ganadores-table-container">
             <!-- El contenido se generará dinámicamente -->
         </div>

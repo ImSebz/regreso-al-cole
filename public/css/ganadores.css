@@ -20,6 +20,16 @@
     background-size: cover;
 }
 
+.ganadores-container h1 {
+    font-family: 'Heyhoo';
+    font-size: 2.3rem;
+    margin-top: 10%;
+    margin-bottom: -100px;
+    width: 33%;
+    text-align: center;
+    font-weight: lighter;
+}
+
 .ganadores-table-container {
     display: flex;
     justify-content: center;
@@ -90,12 +100,14 @@
 
 /* Laptop media query */
 @media screen and (max-width: 1366px) {
-    .ganadores-table-container {
-        flex-direction: column;
-    }
 
-    .ganadores-column {
-        width: 100%;
+    .ganadores-container h1 {
+        font-size: 2rem;
+        margin-top: 12%;
+        margin-bottom: -100px;
+        width: 33%;
+        text-align: center;
+        font-weight: lighter;
     }
 }
 
