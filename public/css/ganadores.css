@@ -27,12 +27,14 @@
     flex-direction: row;
     width: 100%;
     height: 100%;
+    margin-top: 100px;
     padding: 20px;
 }
 
 .ganadores-column {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     width: 50%;
 }
 
@@ -55,14 +57,35 @@
 
 .ganador-name {
     background-color: #fff;
-    font-family: 'Sweet-Chocolate';
+    font-family: 'Heyhoo';
+    text-transform: lowercase;
     font-weight: lighter;
-    font-size: 2.3rem;
+    font-size: 1.6rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 5px;
     width: 67%;
     text-align: center;
+}
+
+.pagination-links-ganadores {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Heyhoo';
+}
+
+.pagination-links-ganadores a {
+    color: #B5579E;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 5px 10px;
+    border: 1px solid #B5579E;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.pagination-links-ganadores a:hover {
+    background-color: #f0f0f0;
 }
 
 /* Laptop media query */
@@ -83,6 +106,6 @@
     }
 
     .ganador-name {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
