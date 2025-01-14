@@ -137,27 +137,27 @@
 </body>
 <script>
     window.addEventListener("load", function() {
-        window.cookieconsent.initialise({
-            palette: {
-                popup: {
-                    background: "#333333",
-                    text: "#ffffff"
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: {
+                        background: "#333333",
+                        text: "#ffffff"
+                    },
+                    button: {
+                        background: "#28a745",
+                        text: "#ffffff"
+                    }
                 },
-                button: {
-                    background: "#28a745",
-                    text: "#ffffff"
+                theme: "classic",
+                position: "bottom",
+                content: {
+                    message: "Consulta términos y condiciones aplicables a la promoción: <a class='cookie-consent-link' href='https://promoregresoalcole.com/assets/tyc-promocion-regreso-al-cole.pdf' target='_blank'>Términos y condiciones</a>. Este sitio web utiliza tecnologías como cookies para habilitar la funcionalidad esencial del sitio, así como para analítica, personalización y publicidad dirigida. Para obtener más información, consulte el siguiente enlace",
+                    dismiss: "Aceptar",
+                    link: "Política de cookies",
+                    href: "https://privacy.newellbrands.com/cookie-policy/index",
                 }
-            },
-            theme: "classic",
-            position: "bottom",
-            content: {
-                message: "Este sitio web utiliza tecnologías como cookies para habilitar la funcionalidad esencial del sitio, así como para analítica, personalización y publicidad dirigida. Para obtener más información, consulte el siguiente enlace: Política de cookies",
-                dismiss: "Aceptar",
-                link: "Leer más",
-                href: "https://privacy.newellbrands.com/cookie-policy/index"
-            }
+            });
         });
-    });
 
     const registroImg = document.getElementById('registro_id');
 
