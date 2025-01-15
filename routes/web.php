@@ -38,7 +38,7 @@ Route::post('/logout', function () {
     return redirect()->route('home');
 })->name('logout');
 
-Route::middleware(['auth', 'descalificado'])->group(function () {
+Route::middleware(['auth'])->middleware(['tutor'])->group(function () {
     Route::get('/registro-compra', RegistroCompra::class)->name('registro-compra');
     Route::get('/galeria', Galeria::class)->name('galeria');
     Route::get('/ganadores', Ganadores::class)->name('ganadores');
