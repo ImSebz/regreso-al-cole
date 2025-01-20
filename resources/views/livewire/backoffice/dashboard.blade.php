@@ -89,7 +89,7 @@
                                                 class="form-control">
                                                 <option value="">Seleccionar</option>
                                                 <option value="1">Aprobar</option>
-                                                <option value="3">Rechazar</option>
+                                                <option value="4">Rechazar</option>
                                             </select>
                                             @error('aprobacion_portada')
                                                 <span class="text-danger">{{ $message }}</span>
