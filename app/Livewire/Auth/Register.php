@@ -48,7 +48,7 @@ class Register extends Component
             'celular' => 'required|numeric|max_digits:10|unique:users',
             'ciudad' => 'required|numeric',
             'email' => 'required|email|max:250|unique:users',
-            'fecha_nacimiento' => 'required|date',
+            'fecha_nacimiento' => 'required|date|before:2006-12-31',
             'aceptar_tyc' => 'required|accepted',
             'aceptar_tratamiento_datos' => 'required|accepted',
             'password' => ['required', 'same:password_confirmation', Rules\Password::defaults()]
@@ -146,6 +146,7 @@ class Register extends Component
 
             'fecha_nacimiento.required' => "Oops, tu fecha de nacimiento es obligatoria.",
             'fecha_nacimiento.date' => "Formato no valido.",
+            'fecha_nacimiento.before' => "Debes ser mayor de edad para participar.",
 
             'aceptar_tyc.required' => "Debes aceptar los términos y condiciones.",
             'aceptar_tyc.accepted' => "Debes aceptar los términos y condiciones.",
