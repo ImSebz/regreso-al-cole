@@ -69,15 +69,31 @@
             </div>
 
             @if (session()->has('max_registros'))
-            <div class="error-max-registros">
-                {{ session('max_registros') }}
-            </div>
+                <div class="error-max-registros">
+                    {{ session('max_registros') }}
+                </div>
+                @script
+                    <script>
+                        Swal.fire({
+                            title: '{{ session('max_registros_title') }}',
+                            text: '{{ session('max_registros') }}',
+                            icon: 'warning',
+                            confirmButtonText: 'Aceptar',
+                            customClass: {
+                                container: 'custom-swal-container'
+                            },
+                            didOpen: () => {
+                                document.querySelector('.custom-swal-container').id = 'max_registros_id';
+                            }
+                        });
+                    </script>
+                @endscript
             @endif
             <div class="registrar-compra-btn">
                 <button wire:click="storeCompra" id="registrar_compra">Enviar</button>
             </div>
 
-          
+
         </div>
 
         @script

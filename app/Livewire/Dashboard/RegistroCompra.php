@@ -27,6 +27,7 @@ class RegistroCompra extends Component
 
         $existingCount = RegistroFactura::where('user_id', $user->id)->count();
         if ($existingCount >= 3) {
+            session()->flash('max_registros_title', 'Límite Alcanzado');
             session()->flash('max_registros', 'Ya has registrado el máximo de 3 facturas.');
             return;
         }
