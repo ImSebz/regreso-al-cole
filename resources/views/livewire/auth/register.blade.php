@@ -106,7 +106,7 @@
                     <div class="check-item">
                         <input type="checkbox" id="aceptar_tyc" wire:model="aceptar_tyc">
                         <label for="aceptar_tyc" class="registro-label-check">Aceptar <a
-                                href="{{ asset('assets/tyc-promocion-regreso-al-cole.pdf') }}" target="_blank"
+                                href="{{ asset('assets/tyc-promoregresoalcole.pdf') }}" target="_blank"
                                 rel="noopener noreferrer">T&C</a></label>
                     </div>
                     @error('aceptar_tyc')
