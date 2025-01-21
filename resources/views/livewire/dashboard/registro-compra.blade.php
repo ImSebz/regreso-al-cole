@@ -67,9 +67,17 @@
                     </div>
                 </div>
             </div>
+
+            @if (session()->has('max_registros'))
+            <div class="error-max-registros">
+                {{ session('max_registros') }}
+            </div>
+            @endif
             <div class="registrar-compra-btn">
                 <button wire:click="storeCompra" id="registrar_compra">Enviar</button>
             </div>
+
+          
         </div>
 
         @script

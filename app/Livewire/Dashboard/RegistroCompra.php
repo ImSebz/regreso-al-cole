@@ -25,6 +25,12 @@ class RegistroCompra extends Component
     public function storeCompra() {
         $user = Auth::user();
 
+        $existingCount = RegistroFactura::where('user_id', $user->id)->count();
+        if ($existingCount >= 3) {
+            session()->flash('max_registros', 'Ya has registrado el máximo de 3 facturas.');
+            return;
+        }
+
         $this->validate([
             'foto_factura' => 'required|mimes:jpg,jpeg,png,bmp,tiff|max:20000',
             'foto_portada' => 'required|mimes:jpg,jpeg,png,bmp,tiff|max:20000',
