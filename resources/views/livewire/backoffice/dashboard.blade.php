@@ -14,7 +14,7 @@
     </div>
     <div class="card">
         <div class="card-header">
-            <h5>Registro de compras</h5>
+            <h5>Registro de facturas</h5>
         </div>
         @isset($RegistroFactura)
             <div class="card-body">
@@ -156,6 +156,18 @@
             <h5>Todos los registros de factura</h5>
         </div>
         <div class="card-body">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="">Buscar por cédula:</label>
+                        <input wire:model.live="cedula_search" type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="">Buscar por factura:</label>
+                        <input wire:model.live="factura_search" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
             {{-- <div class="mb-3">
                 <input type="text" class="form-control" placeholder="Buscar por cédula" wire:model.lazy="search">
                 <button class="btn btn-primary mt-2" wire:click="search">Buscar</button>

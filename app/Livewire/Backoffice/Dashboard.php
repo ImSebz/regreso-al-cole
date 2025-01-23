@@ -13,28 +13,30 @@ class Dashboard extends Component
     use WithPagination;
 
     // Models
-    public $RegistroFactura, $num_factura, $aprobacion_portada, $observaciones;
-    public $search = '';
-    public $searchTerm = '';
+    public $RegistroFactura, $num_factura, $aprobacion_portada, $observaciones, $cedula_search, $factura_search;
 
     public function render()
     {
-        $RegistrosFactura = RegistroFactura::where('estado_id', 2)->paginate(9);
-        $RegistroFacturaComplete = RegistroFactura::when($this->searchTerm, function($query) {
-            $query->whereHas('user', function($q) {
-                $q->where('cedula', 'like', '%' . $this->searchTerm . '%');
-            });
-        })->paginate(9);
+        $filtro = [];
+
+        if ($this->cedula_search){
+            array_push($filtro, ['cedula', 'like', '%' . $this->cedula_search . '%']);
+        }
+
+        if ($this->factura_search){
+            array_push($filtro, ['num_factura', 'like', '%' . $this->factura_search . '%']);
+        }
+
+        $RegistrosFactura = RegistroFactura::where('estado_id', 2)->paginate(10);
+
+        $RegistroFacturaComplete = RegistroFactura::where('estado_id', 2)->whereHas('user', function($query) use ($filtro){
+            $query->where($filtro);
+        })->paginate(10);
 
         return view('livewire.backoffice.dashboard', [
             'RegistrosFactura' => $RegistrosFactura,
             'RegistroFacturaComplete' => $RegistroFacturaComplete
         ]);
-    }
-
-    public function search()
-    {
-        $this->searchTerm = $this->search;
     }
 
     public function getRegistro($registro_id)
