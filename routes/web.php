@@ -33,6 +33,10 @@ Route::get('/dashboard-backoffice', function () {
     return view('backoffice.index');
 })->middleware('backoffice')->name('dashboard-backoffice');
 
+Route::get('/registros-factura', function () {
+    return view('backoffice.registros-factura');
+})->middleware('backoffice')->name('registros-factura');
+
 Route::post('/logout', function () {
     Auth::logout();
     return redirect()->route('home');
