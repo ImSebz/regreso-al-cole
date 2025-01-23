@@ -29,7 +29,7 @@ class Dashboard extends Component
 
         $RegistrosFactura = RegistroFactura::where('estado_id', 2)->paginate(10);
 
-        $RegistroFacturaComplete = RegistroFactura::where('estado_id', [1, 2, 4])->whereHas('user', function($query) use ($filtro){
+        $RegistroFacturaComplete = RegistroFactura::whereHas('user', function($query) use ($filtro){
             $query->where($filtro);
         })->paginate(10);
 
