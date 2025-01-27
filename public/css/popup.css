@@ -18,3 +18,9 @@
 div:where(.swal2-icon).swal2-success {
     display: none !important;
 }
+
+/* Welcome popup */
+
+#welcome_popup_id .swal2-popup {
+    color: #FF36D4 !important;
+}

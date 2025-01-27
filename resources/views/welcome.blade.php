@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/popup.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Regreso al Cole</title>
     <!-- Google Tag Manager -->
     <script>
@@ -137,27 +139,46 @@
 </body>
 <script>
     window.addEventListener("load", function() {
-            window.cookieconsent.initialise({
-                palette: {
-                    popup: {
-                        background: "#333333",
-                        text: "#ffffff"
-                    },
-                    button: {
-                        background: "#28a745",
-                        text: "#ffffff"
-                    }
-                },
-                theme: "classic",
-                position: "bottom",
-                content: {
-                    message: "Consulta términos y condiciones aplicables a la promoción: <a class='cookie-consent-link' href='https://promoregresoalcole.com/assets/tyc-promoregresoalcole.pdf' target='_blank'>Términos y condiciones</a>. Este sitio web utiliza tecnologías como cookies para habilitar la funcionalidad esencial del sitio, así como para analítica, personalización y publicidad dirigida. Para obtener más información, consulte el siguiente enlace",
-                    dismiss: "Aceptar",
-                    link: "Política de cookies",
-                    href: "https://privacy.newellbrands.com/cookie-policy/index",
-                }
-            });
+        console.log('Pop up cargado');
+        const approvedCount = @json($approvedCount);
+        const totalPrizes = 1200;
+        const prizesLeft = totalPrizes - approvedCount;
+        Swal.fire({
+            title: 'Bienvenido!',
+            html: `<p>¡Participa en la promoción y gana uno de los <strong>${prizesLeft} premios disponibles!</strong></p>`,
+            confirmButtonText: 'Aceptar',
+            customClass: {
+                container: 'custom-swal-container'
+            },
+            didOpen: () => {
+                document.querySelector('.custom-swal-container').id = 'welcome_popup_id';
+            }
         });
+    });
+
+
+    window.addEventListener("load", function() {
+        window.cookieconsent.initialise({
+            palette: {
+                popup: {
+                    background: "#333333",
+                    text: "#ffffff"
+                },
+                button: {
+                    background: "#28a745",
+                    text: "#ffffff"
+                }
+            },
+            theme: "classic",
+            position: "bottom",
+            content: {
+                message: "Consulta términos y condiciones aplicables a la promoción: <a class='cookie-consent-link' href='https://promoregresoalcole.com/assets/tyc-promoregresoalcole.pdf' target='_blank'>Términos y condiciones</a>. Este sitio web utiliza tecnologías como cookies para habilitar la funcionalidad esencial del sitio, así como para analítica, personalización y publicidad dirigida. Para obtener más información, consulte el siguiente enlace",
+                dismiss: "Aceptar",
+                link: "Política de cookies",
+                href: "https://privacy.newellbrands.com/cookie-policy/index",
+            }
+        });
+    });
 
     const registroImg = document.getElementById('registro_id');
 

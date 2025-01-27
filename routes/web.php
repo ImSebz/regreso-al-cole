@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Auth\Register;
 use App\Livewire\Auth\Login;
 use App\Livewire\Dashboard\RegistroCompra;
+use App\Models\RegistroFactura;
 use App\Livewire\Dashboard\Galeria;
 use App\Livewire\Dashboard\Ganadores;
 
@@ -22,7 +23,9 @@ Route::get('/', function () {
     if (auth()->check()) {
         return redirect()->route('registro-compra');
     }
-    return view('welcome');
+
+    $approvedCount = RegistroFactura::where('estado_id', 1)->count();
+    return view('welcome', compact('approvedCount'));
 })->name('home');
 
 Route::get('/register', Register::class)->middleware('guest')->name('register');
