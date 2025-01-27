@@ -139,13 +139,12 @@
 </body>
 <script>
     window.addEventListener("load", function() {
-        console.log('Pop up cargado');
         const approvedCount = @json($approvedCount);
         const totalPrizes = 1200;
         const prizesLeft = totalPrizes - approvedCount;
         Swal.fire({
-            title: 'Bienvenido!',
-            html: `<p>¡Participa en la promoción y gana uno de los <strong>${prizesLeft} premios disponibles!</strong></p>`,
+            title: '¡Bienvenido/a!',
+            html: `<p>¡Participa en Regreso al Cole y gana uno de los <strong>${prizesLeft} premios disponibles</strong>!</p>`,
             confirmButtonText: 'Aceptar',
             customClass: {
                 container: 'custom-swal-container'
