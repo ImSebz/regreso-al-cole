@@ -31,7 +31,7 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const itemsPerPage = 6;
+        const itemsPerPage = 9;
         const galeria = document.getElementById('galeria');
         const items = Array.from(galeria.getElementsByClassName('galeria-item'));
         const paginationLinks = document.getElementById('pagination-links');
