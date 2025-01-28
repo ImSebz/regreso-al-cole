@@ -1,5 +1,8 @@
 <div class="container">
-    <div class="card mt-5">
+    <div class="mt-3">
+        <a href="{{ route('dashboard-backoffice') }}" class="btn btn-success">Volver al Dashboard</a>
+    </div>
+    <div class="card mt-4">
         <div class="card-header">
             <h5>Todos los registros de factura</h5>
         </div>
