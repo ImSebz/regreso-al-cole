@@ -76,8 +76,6 @@ class Dashboard extends Component
             ]);
         
             
-        
-            $this->RegistroFactura->user = User::find($this->RegistroFactura->user_id);
             $this->RegistroFactura->num_factura = $this->num_factura;
             $this->RegistroFactura->estado_id = 1;
             $this->RegistroFactura->estado_portada = $this->aprobacion_portada;
