@@ -57,10 +57,15 @@ class Dashboard extends Component
             $this->RegistroFactura->estado_portada = 4;
             $this->RegistroFactura->observaciones = "Factura rechazada por máximo de 3 facturas registradas aprobadas.";
             $this->RegistroFactura->save();
-
-            $message = 'Factura RECHAZADA automaticamente por exceso de limite de facturas aprobadas.';
-
-            return;
+            
+            $message = 'Factura RECHAZADA automáticamente por exceso de límite de facturas aprobadas.';
+            $this->reset(
+                'RegistroFactura',
+                'num_factura',
+                'aprobacion_portada',
+                'observaciones'
+            );
+            return redirect()->back()->with('success', $message);
         }
 
         if ($validacion) {
