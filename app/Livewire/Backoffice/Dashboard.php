@@ -46,19 +46,39 @@ class Dashboard extends Component
 
     public function validacionRegistro($validacion)
     {
-        if ($validacion){
+
+        $existingCount = RegistroFactura::where('user_id', $this->RegistroFactura->user_id)
+                                            ->where('estado_id', 1)
+                                            ->count();
+    
+        if ($existingCount >= 3) {
+            $this->RegistroFactura->num_factura = null;
+            $this->RegistroFactura->estado_id = 4;
+            $this->RegistroFactura->estado_portada = 4;
+            $this->RegistroFactura->observaciones = "Factura rechazada por máximo de 3 facturas registradas aprobadas.";
+            $this->RegistroFactura->save();
+
+            $message = 'Factura RECHAZADA exitosamente.';
+
+            return;
+        }
+
+        if ($validacion) {
             $this->validate([
                 'num_factura' => ['required', 'alpha_num:ascii', new num_factura],
                 'aprobacion_portada' => ['required', 'numeric'],
                 'observaciones' => ['required', 'string']
             ]);
-
+        
+            
+        
+            $this->RegistroFactura->user = User::find($this->RegistroFactura->user_id);
             $this->RegistroFactura->num_factura = $this->num_factura;
             $this->RegistroFactura->estado_id = 1;
             $this->RegistroFactura->estado_portada = $this->aprobacion_portada;
             $this->RegistroFactura->observaciones = $this->observaciones;
             $this->RegistroFactura->save();
-
+        
             $message = 'Factura APROBADA exitosamente.';
         }else {
             $this->validate([
