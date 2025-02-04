@@ -52,7 +52,7 @@ class Dashboard extends Component
                                             ->count();
     
         if ($existingCount >= 3) {
-            $this->RegistroFactura->num_factura = null;
+            $this->RegistroFactura->num_factura = $this->num_factura;
             $this->RegistroFactura->estado_id = 4;
             $this->RegistroFactura->estado_portada = 4;
             $this->RegistroFactura->observaciones = "Factura rechazada por máximo de 3 facturas registradas aprobadas.";
@@ -88,7 +88,7 @@ class Dashboard extends Component
                 'observaciones' => ['required', 'string']
             ]);
 
-            $this->RegistroFactura->num_factura = null;
+            $this->RegistroFactura->num_factura = $this->num_factura;
             $this->RegistroFactura->estado_id = 4;
             $this->RegistroFactura->estado_portada = 4;
             $this->RegistroFactura->observaciones = $this->observaciones;
