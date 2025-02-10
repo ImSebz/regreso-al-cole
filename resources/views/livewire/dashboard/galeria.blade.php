@@ -55,23 +55,57 @@
             }
         }
 
-        function createPagination() {
+        function createPagination(currentPage = 1) {
             const totalPages = Math.ceil(items.length / itemsPerPage);
+            const maxVisiblePages = 5;
             paginationLinks.innerHTML = '';
-            for (let i = 1; i <= totalPages; i++) {
+
+            function addPageLink(page) {
                 const link = document.createElement('a');
                 link.href = '#';
-                link.innerText = i;
+                link.innerText = page;
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
-                    showPage(i);
+                    showPage(page);
+                    createPagination(page);
                 });
                 paginationLinks.appendChild(link);
             }
-            // Marcar la primera página como activa inicialmente
-            if (paginationLinks.getElementsByTagName('a').length > 0) {
-                paginationLinks.getElementsByTagName('a')[0].classList.add('active');
+
+            function addEllipsis() {
+                const ellipsis = document.createElement('span');
+                ellipsis.innerText = '...';
+                paginationLinks.appendChild(ellipsis);
             }
+
+            if (currentPage > 1) {
+                addPageLink(1);
+                if (currentPage > 3) {
+                    addEllipsis();
+                }
+            }
+
+            const startPage = Math.max(2, currentPage - Math.floor(maxVisiblePages / 2));
+            const endPage = Math.min(totalPages - 1, currentPage + Math.floor(maxVisiblePages / 2));
+
+            for (let i = startPage; i <= endPage; i++) {
+                addPageLink(i);
+            }
+
+            if (currentPage < totalPages - 2) {
+                addEllipsis();
+            }
+            if (currentPage < totalPages) {
+                addPageLink(totalPages);
+            }
+
+            // Marcar la página actual como activa
+            const links = paginationLinks.getElementsByTagName('a');
+            Array.from(links).forEach(link => {
+                if (parseInt(link.innerText) === currentPage) {
+                    link.classList.add('active');
+                }
+            });
         }
 
         createPagination();
