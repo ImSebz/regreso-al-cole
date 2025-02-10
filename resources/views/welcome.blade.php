@@ -140,7 +140,7 @@
 <script>
     window.addEventListener("load", function() {
         const approvedCount = @json($approvedCount);
-        const totalPrizes = 150 * 5;
+        const totalPrizes = 150 * 6;
         const prizesLeft = totalPrizes - approvedCount;
         Swal.fire({
             title: '¡Aún estás a tiempo de participar!',
