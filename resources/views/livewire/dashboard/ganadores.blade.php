@@ -1,7 +1,7 @@
 <!-- filepath: /c:/laragon/www/regreso-al-cole/resources/views/livewire/dashboard/ganadores.blade.php -->
 <div class="main-ganadores-container">
     <div class="ganadores-container">
-        <h1>Semana 5</h1>
+        <h1>Semana 6</h1>
         <div class="ganadores-table-container" id="ganadores-table-container">
             <!-- El contenido se generará dinámicamente -->
         </div>
