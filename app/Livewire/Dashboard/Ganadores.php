@@ -17,7 +17,7 @@ class Ganadores extends Component
     public function getGanadores(){
         $this->ganadores = RegistroFactura::with('user') // Asegúrate de cargar la relación 'user'
             ->where('estado_id', 1)
-            ->whereBetween('created_at', ['2025-02-10', '2025-02-17'])
+            ->whereBetween('created_at', ['2025-02-17', '2025-02-24'])
             ->orderBy('created_at', 'asc')
             ->take($this->maxItems)
             ->get();
