@@ -142,17 +142,17 @@
         const approvedCount = @json($approvedCount);
         const totalPrizes = 150 * 8;
         const prizesLeft = totalPrizes - approvedCount;
-        Swal.fire({
-            title: '¡Aún estás a tiempo de participar!',
-            html: `<p>¡Quedan <strong>${prizesLeft} premios</strong> esta semana!</p>`,
-            confirmButtonText: 'Aceptar',
-            customClass: {
-                container: 'custom-swal-container'
-            },
-            didOpen: () => {
-                document.querySelector('.custom-swal-container').id = 'welcome_popup_id';
-            }
-        });
+        // Swal.fire({
+        //     title: '¡Aún estás a tiempo de participar!',
+        //     html: `<p>¡Quedan <strong>${prizesLeft} premios</strong> esta semana!</p>`,
+        //     confirmButtonText: 'Aceptar',
+        //     customClass: {
+        //         container: 'custom-swal-container'
+        //     },
+        //     didOpen: () => {
+        //         document.querySelector('.custom-swal-container').id = 'welcome_popup_id';
+        //     }
+        // });
     });
 
 

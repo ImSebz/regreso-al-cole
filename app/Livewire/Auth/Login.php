@@ -19,7 +19,7 @@ class Login extends Component
         $this->validate();
 
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
-            return redirect()->route('registro-compra');
+            return redirect()->route('ganadores');
         } else {
             session()->flash('error', 'Oops! Correo o contraseña incorrectos.');
         }

@@ -64,8 +64,8 @@
                 </div>
             </div>
             <div class="header-menu">
-                <a href="{{ route('registro-compra') }}"
-                    class="{{ request()->routeIs('registro-compra') ? 'active' : '' }}">Registro Compra</a>
+                {{-- <a href="{{ route('registro-compra') }}"
+                    class="{{ request()->routeIs('registro-compra') ? 'active' : '' }}">Registro Compra</a> --}}
                 <a href="{{ route('ganadores') }}"
                     class="{{ request()->routeIs('ganadores') ? 'active' : '' }}">Ganadores</a>
                 <a href="{{ route('galeria') }}" class="{{ request()->routeIs('galeria') ? 'active' : '' }}">Galería</a>
@@ -84,9 +84,9 @@
     <div id="floatingMenu" class="floating-menu">
         <button id="closeMenu" class="close-menu">X</button>
 
-        <div class="floating-menu-item" id="floating_mobile">
+        {{-- <div class="floating-menu-item" id="floating_mobile">
             <a href="{{ route('registro-compra') }}">Registro Compra</a>
-        </div>
+        </div> --}}
         <div class="floating-menu-item" id="floating_mobile">
             <a href="{{ route('ganadores') }}">Ganadores</a>
         </div>

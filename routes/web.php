@@ -21,7 +21,7 @@ use App\Livewire\Dashboard\Ganadores;
 
 Route::get('/', function () {
     if (auth()->check()) {
-        return redirect()->route('registro-compra');
+        return redirect()->route('ganadores');
     }
 
     $approvedCount = RegistroFactura::where('estado_id', 1)->count();
@@ -46,7 +46,7 @@ Route::post('/logout', function () {
 })->name('logout');
 
 Route::middleware(['auth'])->middleware(['tutor'])->group(function () {
-    Route::get('/registro-compra', RegistroCompra::class)->name('registro-compra');
+    // Route::get('/registro-compra', RegistroCompra::class)->name('registro-compra');
     Route::get('/galeria', Galeria::class)->name('galeria');
     Route::get('/ganadores', Ganadores::class)->name('ganadores');
 });
