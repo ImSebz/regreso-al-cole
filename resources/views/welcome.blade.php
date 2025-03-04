@@ -139,20 +139,17 @@
 </body>
 <script>
     window.addEventListener("load", function() {
-        const approvedCount = @json($approvedCount);
-        const totalPrizes = 150 * 8;
-        const prizesLeft = totalPrizes - approvedCount;
-        // Swal.fire({
-        //     title: '¡Aún estás a tiempo de participar!',
-        //     html: `<p>¡Quedan <strong>${prizesLeft} premios</strong> esta semana!</p>`,
-        //     confirmButtonText: 'Aceptar',
-        //     customClass: {
-        //         container: 'custom-swal-container'
-        //     },
-        //     didOpen: () => {
-        //         document.querySelector('.custom-swal-container').id = 'welcome_popup_id';
-        //     }
-        // });
+        Swal.fire({
+            title: '¡Gracias por tu interés! 😊',
+            html: `<p>La actividad ha finalizado, pero te invitamos a estar pendiente de nuestras próximas iniciativas.</p> <br> <p>¡Muy pronto tendremos más sorpresas para ti! 🎉✨</p>`,
+            confirmButtonText: 'Aceptar',
+            customClass: {
+                container: 'custom-swal-container'
+            },
+            didOpen: () => {
+                document.querySelector('.custom-swal-container').id = 'welcome_popup_id';
+            }
+        });
     });
 
 
