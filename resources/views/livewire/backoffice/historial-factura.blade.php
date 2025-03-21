@@ -10,6 +10,7 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Número de Factura</th>
                         <th>Foto de Factura</th>
                         <th>Usuario</th>
@@ -21,6 +22,7 @@
                 <tbody>
                     @foreach($RegistrosFactura as $registro)
                         <tr>
+                            <td>{{ $registro->id }}</td>
                             <td>{{ $registro->num_factura }}</td>
                             <td>
                                 <a href="{{ str_replace('public', 'storage', asset($registro->foto_factura)) }}" target="_blank">
