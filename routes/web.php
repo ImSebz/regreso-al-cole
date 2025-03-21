@@ -40,6 +40,10 @@ Route::get('/registros-factura', function () {
     return view('backoffice.registros-factura');
 })->middleware('backoffice')->name('registros-factura');
 
+Route::get('/historial-factura', function () {
+    return view('backoffice.historial-factura');
+})->middleware('backoffice')->name('historial-factura');
+
 Route::post('/logout', function () {
     Auth::logout();
     return redirect()->route('home');

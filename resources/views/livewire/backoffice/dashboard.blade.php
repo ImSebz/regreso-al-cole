@@ -17,6 +17,8 @@
         <div class="card-header">
             <h5>Registro de facturas</h5>
             <a href="{{ route('registros-factura') }}">Ver registros de factura</a>
+            <br>
+            <a href="{{ route('historial-factura') }}"> Ver todas las facturas</a>
         </div>
         @isset($RegistroFactura)
             <div class="card-body">
